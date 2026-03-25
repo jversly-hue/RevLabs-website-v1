@@ -1,0 +1,115 @@
+{
+  "brand_identity": {
+    "name": "RevLabs",
+    "tagline": "The future of business",
+    "mission": "Automation that supports the business owner, not replaces them. Control, Structure, Efficiency.",
+    "target_audience": "Blue collar business owners (Roofing, HVAC, Construction). Practical, no-nonsense.",
+    "tone": "Premium, Serious, Futuristic but Grounded, Efficient."
+  },
+  "design_system": {
+    "theme_mode": "dark",
+    "colors": {
+      "background": {
+        "default": "#0A0A0A",
+        "card": "#121212",
+        "surface": "#171717"
+      },
+      "primary": {
+        "neon_green": "#CCFF00",
+        "neon_green_hover": "#B3E600",
+        "glow": "rgba(204, 255, 0, 0.4)"
+      },
+      "secondary": {
+        "purple": "#8B5CF6",
+        "purple_muted": "rgba(139, 92, 246, 0.2)"
+      },
+      "accent": {
+        "bronze": "#CD7F32"
+      },
+      "text": {
+        "primary": "#F2F2F2",
+        "secondary": "#A3A3A3",
+        "muted": "#525252"
+      }
+    },
+    "typography": {
+      "headings": {
+        "font_family": "Chivo, sans-serif",
+        "weights": ["700", "900"],
+        "letter_spacing": "tracking-tight"
+      },
+      "body": {
+        "font_family": "Manrope, sans-serif",
+        "weights": ["400", "500"]
+      },
+      "mono": {
+        "font_family": "JetBrains Mono, monospace"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10",
+      "neon_border": "border border-[#CCFF00]/30 shadow-[0_0_15px_rgba(204,255,0,0.15)]",
+      "gradients": {
+        "hero_glow": "radial-gradient(circle at 50% 50%, rgba(204,255,0,0.15) 0%, rgba(10,10,10,0) 70%)",
+        "card_hover": "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%)"
+      }
+    },
+    "layout_strategy": {
+      "grid_system": "Bento Grid (Asymmetric)",
+      "spacing_scale": "2x standard (p-8, p-12, p-16)",
+      "container_width": "max-w-7xl"
+    },
+    "motion": {
+      "transitions": "transition-all duration-300 ease-out",
+      "hover_effects": "translate-y-[-2px] shadow-lg",
+      "reveal": "opacity-0 translate-y-4 -> opacity-100 translate-y-0"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1764258560123-73a76ddd8f4b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMG5lb24lMjBncmVlbiUyMGRhdGElMjBmbG93JTIwbmV0d29yayUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3NDQ1NDU1OXww&ixlib=rb-4.1.0&q=85",
+      "problem_solution_control": "https://images.pexels.com/photos/6474469/pexels-photo-6474469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "services_hvac": "https://images.pexels.com/photos/6471911/pexels-photo-6471911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "testimonial_1": "https://images.unsplash.com/photo-1659353587484-a83a0ddf8aca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMG1hbiUyMGNvbnN0cnVjdGlvbiUyMGJ1c2luZXNzJTIwb3duZXJ8ZW58MHx8fHwxNzc0NDU0NTYyfDA&ixlib=rb-4.1.0&q=85",
+      "testimonial_2": "https://images.unsplash.com/photo-1655917303304-8ad60e036cba?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTN8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMG1hbiUyMGNvbnN0cnVjdGlvbiUyMGJ1c2luZXNzJTIwb3duZXJ8ZW58MHx8fHwxNzc0NDU0NTYyfDA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons_library": "lucide-react"
+  },
+  "components_instructions": {
+    "Hero": {
+      "description": "Full screen, dark background with subtle neon green abstract network. Strong headline 'The Future of Business' using Chivo font. Two CTAs: 'Get Started' (Neon Green solid) and 'Learn More' (Outline).",
+      "animation": "Fade in text, slow pulse on background network."
+    },
+    "ProblemSolution": {
+      "layout": "Split view. Left: Text (Chaos vs Control). Right: Image of confident contractor with tablet (problem_solution_control).",
+      "highlight": "Use Purple accent for the 'Solution' keyword or icon."
+    },
+    "ServicesCards": {
+      "style": "Bento Grid. Dark cards with subtle border-white/10. Hover: Border glows neon green. Icons: Lucide, thin stroke.",
+      "content": "Roofing Automation, HVAC Systems, Workflow Control."
+    },
+    "ContactForm": {
+      "library": "Shadcn Form",
+      "styling": "Dark input fields (bg-white/5), focus border neon green. 'Industry' dropdown is critical."
+    },
+    "LanguageToggle": {
+      "position": "Top Right (Nav)",
+      "behavior": "Toggle switch NL / EN. Default NL.",
+      "style": "Minimalist text toggle."
+    }
+  },
+  "universal_guidelines": [
+    "Do NOT use gradients for text.",
+    "Do NOT use 'Inter' for headings. Use 'Chivo'.",
+    "Keep purples very subtle, only for secondary highlights.",
+    "Ensure high contrast for accessibility (Grey text must be readable on black).",
+    "Use 2x padding. Don't crowd elements.",
+    "Bilingual support: Ensure containers can grow for Dutch text."
+  ],
+  "anti_patterns": [
+    "No flashy 'startup' illustrations.",
+    "No pure white backgrounds.",
+    "No teal/cyan.",
+    "No 'friendly' rounded sans-serifs (like Nunito)."
+  ]
+}
