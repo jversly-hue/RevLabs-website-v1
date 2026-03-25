@@ -14,7 +14,7 @@ const Benefits = () => {
 
   return (
     <section 
-      className="relative py-24 lg:py-32"
+      className="relative py-28 lg:py-36"
       style={{ background: 'linear-gradient(180deg, #161A20 0%, #121418 100%)' }}
       data-testid="benefits-section"
     >
@@ -23,7 +23,7 @@ const Benefits = () => {
           {/* Content */}
           <div>
             <div className="text-[11px] font-medium text-[#6B7280] uppercase tracking-[0.12em] mb-4">
-              Results
+              {t('benefits.label')}
             </div>
             <h2 
               className="text-[32px] lg:text-[40px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.15] mb-6"

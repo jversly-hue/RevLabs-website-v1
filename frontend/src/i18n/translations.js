@@ -29,27 +29,29 @@ export const translations = {
       }
     },
     howItWorks: {
+      label: "Werkwijze",
       title: "Hoe het werkt",
       subtitle: "Van analyse tot implementatie in drie stappen",
       steps: [
         {
           number: "01",
           title: "Analyse",
-          description: "We brengen uw huidige workflow in kaart"
+          description: "We brengen uw huidige workflow in kaart en identificeren waar u tijd verliest."
         },
         {
           number: "02",
           title: "Opbouw",
-          description: "We bouwen een systeem op maat"
+          description: "We bouwen een systeem op maat dat naadloos aansluit op uw manier van werken."
         },
         {
           number: "03",
           title: "Implementatie",
-          description: "We implementeren en optimaliseren"
+          description: "We implementeren, testen en optimaliseren tot alles soepel draait."
         }
       ]
     },
     systems: {
+      label: "Oplossingen",
       title: "Systemen",
       subtitle: "Concrete oplossingen voor uw bedrijf",
       items: [
@@ -59,13 +61,14 @@ export const translations = {
         },
         {
           title: "Lead opvolging",
-          description: "Nieuwe leads worden automatisch gestructureerd en opgevolgd.\n\nU focust enkel op de klanten die echt tellen."
+          description: "Inkomende leads worden automatisch gestructureerd en opgevolgd.\n\nU focust enkel op de klanten die echt tellen."
         }
       ]
     },
     benefits: {
-      title: "Resultaten",
-      subtitle: "Wat onze klanten ervaren",
+      label: "Resultaten",
+      title: "Wat u kunt verwachten",
+      subtitle: "Concrete resultaten voor uw bedrijf",
       items: [
         "Minder administratief werk",
         "Meer overzicht en controle",
@@ -75,8 +78,9 @@ export const translations = {
       ]
     },
     testimonials: {
-      title: "Ervaringen",
-      subtitle: "Wat onze klanten zeggen",
+      label: "Ervaringen",
+      title: "Wat klanten zeggen",
+      subtitle: "Ervaringen van bedrijven zoals het uwe",
       items: [
         {
           name: "Marc Janssen",
@@ -99,11 +103,12 @@ export const translations = {
       ]
     },
     cta: {
-      title: "Stop met tijd verliezen aan manueel werk.",
-      subtitle: "Ontdek waar uw workflow efficiënter kan",
+      title: "Klaar om efficiënter te werken?",
+      subtitle: "Ontdek waar uw workflow beter kan — zonder verplichtingen.",
       button: "Plan een demo"
     },
     faq: {
+      label: "Vragen",
       title: "Veelgestelde vragen",
       subtitle: "Antwoorden op de meest voorkomende vragen",
       items: [
@@ -126,7 +131,8 @@ export const translations = {
       ]
     },
     contact: {
-      title: "Contact",
+      label: "Contact",
+      title: "Neem contact op",
       subtitle: "Vul het formulier in en we nemen snel contact met u op",
       form: {
         name: "Naam",
@@ -190,27 +196,29 @@ export const translations = {
       }
     },
     howItWorks: {
+      label: "Process",
       title: "How it works",
       subtitle: "From analysis to implementation in three steps",
       steps: [
         {
           number: "01",
           title: "Analysis",
-          description: "We map out your current workflow"
+          description: "We map out your current workflow and identify where you're losing time."
         },
         {
           number: "02",
           title: "Build",
-          description: "We build a custom system"
+          description: "We build a custom system that seamlessly fits your way of working."
         },
         {
           number: "03",
           title: "Implementation",
-          description: "We implement and optimize"
+          description: "We implement, test, and optimize until everything runs smoothly."
         }
       ]
     },
     systems: {
+      label: "Solutions",
       title: "Systems",
       subtitle: "Concrete solutions for your business",
       items: [
@@ -220,13 +228,14 @@ export const translations = {
         },
         {
           title: "Lead follow-up",
-          description: "New leads are automatically structured and followed up.\n\nYou focus only on the customers that truly matter."
+          description: "Incoming leads are automatically structured and followed up.\n\nYou focus only on the customers that truly matter."
         }
       ]
     },
     benefits: {
-      title: "Results",
-      subtitle: "What our clients experience",
+      label: "Results",
+      title: "What you can expect",
+      subtitle: "Concrete results for your business",
       items: [
         "Less administrative work",
         "More overview and control",
@@ -236,8 +245,9 @@ export const translations = {
       ]
     },
     testimonials: {
-      title: "Experiences",
-      subtitle: "What our clients say",
+      label: "Experiences",
+      title: "What clients say",
+      subtitle: "Experiences from businesses like yours",
       items: [
         {
           name: "Marc Janssen",
@@ -260,11 +270,12 @@ export const translations = {
       ]
     },
     cta: {
-      title: "Stop wasting time on manual work.",
-      subtitle: "Discover where your workflow can be more efficient",
+      title: "Ready to work more efficiently?",
+      subtitle: "Discover where your workflow can improve — no obligations.",
       button: "Book a demo"
     },
     faq: {
+      label: "Questions",
       title: "Frequently asked questions",
       subtitle: "Answers to the most common questions",
       items: [
@@ -287,7 +298,8 @@ export const translations = {
       ]
     },
     contact: {
-      title: "Contact",
+      label: "Contact",
+      title: "Get in touch",
       subtitle: "Fill out the form and we'll contact you soon",
       form: {
         name: "Name",

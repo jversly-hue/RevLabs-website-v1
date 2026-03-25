@@ -66,15 +66,15 @@ const ContactForm = () => {
   return (
     <section 
       id="contact"
-      className="relative py-24 lg:py-32"
+      className="relative py-28 lg:py-36"
       style={{ background: 'linear-gradient(180deg, #121418 0%, #161A20 100%)' }}
       data-testid="contact-section"
     >
       <div className="max-w-[720px] mx-auto px-6">
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-14">
           <div className="text-[11px] font-medium text-[#6B7280] uppercase tracking-[0.12em] mb-4">
-            Contact
+            {t('contact.label')}
           </div>
           <h2 
             className="text-[32px] lg:text-[40px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.15] mb-4"
@@ -226,7 +226,7 @@ const ContactForm = () => {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full mt-6 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] hover:from-[#B89DFB] hover:to-[#A78BFA] font-medium h-12 rounded-lg text-[14px] transition-all shadow-[0_2px_12px_rgba(167,139,250,0.25)] hover:shadow-[0_4px_20px_rgba(167,139,250,0.35)] disabled:opacity-50"
+            className="w-full mt-6 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] hover:from-[#B89DFB] hover:to-[#A78BFA] font-semibold h-12 rounded-lg text-[14px] transition-all shadow-[0_2px_12px_rgba(167,139,250,0.15)] hover:shadow-[0_4px_20px_rgba(167,139,250,0.25)] disabled:opacity-50"
             data-testid="submit-button"
           >
             {isSubmitting ? (

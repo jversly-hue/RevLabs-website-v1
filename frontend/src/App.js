@@ -2,6 +2,7 @@ import React from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./context/LanguageContext";
+import LogoBackground from "./components/LogoBackground";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProblemSolution from "./components/ProblemSolution";
@@ -16,9 +17,10 @@ import Footer from "./components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-[#0A0A0A]">
+    <div className="min-h-screen bg-[#121418] relative">
+      <LogoBackground />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <ProblemSolution />
         <HowItWorks />

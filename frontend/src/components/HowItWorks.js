@@ -8,7 +8,7 @@ const HowItWorks = () => {
 
   return (
     <section 
-      className="relative py-24 lg:py-32"
+      className="relative py-28 lg:py-36"
       style={{ background: 'linear-gradient(180deg, #121418 0%, #161A20 100%)' }}
       data-testid="how-it-works-section"
     >
@@ -16,7 +16,7 @@ const HowItWorks = () => {
         {/* Header */}
         <div className="mb-16">
           <div className="text-[11px] font-medium text-[#6B7280] uppercase tracking-[0.12em] mb-4">
-            Process
+            {t('howItWorks.label')}
           </div>
           <h2 
             className="text-[32px] lg:text-[40px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.15]"

@@ -15,34 +15,26 @@ const Hero = () => {
     >
       {/* Subtle gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-[20%] left-[15%] w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(167,139,250,0.06)_0%,transparent_70%)]" />
-        <div className="absolute bottom-[20%] right-[10%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(103,232,249,0.04)_0%,transparent_70%)]" />
+        <div className="absolute top-[20%] left-[15%] w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(167,139,250,0.05)_0%,transparent_70%)]" />
+        <div className="absolute bottom-[20%] right-[10%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(103,232,249,0.03)_0%,transparent_70%)]" />
       </div>
 
       {/* Subtle grid pattern */}
       <div 
-        className="absolute inset-0 opacity-[0.015]"
+        className="absolute inset-0 opacity-[0.012]"
         style={{
           backgroundImage: `linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
                             linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundSize: '80px 80px'
         }}
       />
 
       {/* Content */}
       <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-28 pb-24">
         <div className="max-w-[720px]">
-          {/* Small badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1E222A] border border-white/[0.06] mb-8 animate-fade-up">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#A78BFA]" />
-            <span className="text-[12px] text-[#9CA3AF] tracking-wide">
-              Automation Systems
-            </span>
-          </div>
-
           {/* Headline */}
           <h1 
-            className="text-[44px] sm:text-[52px] lg:text-[64px] font-semibold text-[#E8E8EC] tracking-[-0.025em] leading-[1.1] mb-8 animate-fade-up"
+            className="text-[42px] sm:text-[50px] lg:text-[60px] font-semibold text-[#E8E8EC] tracking-[-0.025em] leading-[1.1] mb-8 animate-fade-up"
             data-testid="hero-headline"
           >
             {t('hero.headline')}
@@ -50,7 +42,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p 
-            className="text-[18px] lg:text-[20px] text-[#9CA3AF] leading-[1.6] mb-12 max-w-[560px] animate-fade-up-delay"
+            className="text-[18px] lg:text-[20px] text-[#9CA3AF] leading-[1.6] mb-12 max-w-[540px] animate-fade-up-delay"
             data-testid="hero-subheadline"
           >
             {t('hero.subheadline')}
@@ -59,12 +51,12 @@ const Hero = () => {
           {/* CTA Section */}
           <div className="animate-fade-up-delay-2">
             {/* Primary CTA */}
-            <div className="flex flex-col sm:flex-row items-start gap-5 mb-4">
+            <div className="flex flex-col sm:flex-row items-start gap-5 mb-5">
               <a
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2.5 text-[15px] font-semibold px-7 py-4 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg hover:from-[#B89DFB] hover:to-[#A78BFA] transition-all duration-200 shadow-[0_2px_12px_rgba(167,139,250,0.2)] hover:shadow-[0_4px_24px_rgba(167,139,250,0.3)]"
+                className="group inline-flex items-center gap-2.5 text-[15px] font-semibold px-7 py-4 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg hover:from-[#B89DFB] hover:to-[#A78BFA] transition-all duration-200 shadow-[0_2px_12px_rgba(167,139,250,0.15)] hover:shadow-[0_4px_20px_rgba(167,139,250,0.25)]"
                 data-testid="hero-cta"
               >
                 {t('hero.cta')}
@@ -81,7 +73,7 @@ const Hero = () => {
             </div>
 
             {/* Supporting text */}
-            <p className="text-[13px] text-[#6B7280] max-w-[400px]">
+            <p className="text-[13px] text-[#6B7280] max-w-[420px] leading-[1.6]">
               {t('hero.ctaSupport')}
             </p>
           </div>
