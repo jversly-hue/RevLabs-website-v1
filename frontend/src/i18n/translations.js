@@ -135,7 +135,7 @@ export const translations = {
         },
         {
           question: "Voor welke bedrijven is dit geschikt?",
-          answer: "Onze oplossingen zijn ideaal voor bedrijven in de bouw, dakwerken, HVAC en andere technische sectoren die hun administratie willen stroomlijnen."
+          answer: "Voor elk bedrijf dat minder tijd wil verliezen aan repetitieve taken, minder fouten wil corrigeren en toch de volle controle wil behouden. Onze oplossingen helpen u efficiënter werken — zonder extra complexiteit, en met behoud van overzicht."
         }
       ]
     },
@@ -311,7 +311,7 @@ export const translations = {
         },
         {
           question: "Which businesses is this suitable for?",
-          answer: "Our solutions are ideal for companies in construction, roofing, HVAC, and other technical sectors looking to streamline their administration."
+          answer: "For any business that wants to spend less time on repetitive tasks, make fewer corrections, and still maintain full control. Our solutions help you work more efficiently — without extra complexity, while keeping oversight."
         }
       ]
     },
