@@ -135,7 +135,7 @@ export const translations = {
         },
         {
           question: "Voor welke bedrijven is dit geschikt?",
-          answer: "Voor elk bedrijf dat minder tijd wil verliezen aan repetitieve taken, minder fouten wil corrigeren en toch de volle controle wil behouden. Onze oplossingen helpen u efficiënter werken — zonder extra complexiteit, en met behoud van overzicht."
+          answer: "Voor bedrijven die geen tijd of geld meer willen verliezen aan eindeloze administratie.\n\nGeen standaard software, maar een oplossing op maat."
         }
       ]
     },
@@ -311,7 +311,7 @@ export const translations = {
         },
         {
           question: "Which businesses is this suitable for?",
-          answer: "For any business that wants to spend less time on repetitive tasks, make fewer corrections, and still maintain full control. Our solutions help you work more efficiently — without extra complexity, while keeping oversight."
+          answer: "For businesses that no longer want to lose time or money on endless administration.\n\nNo standard software, but a tailor-made solution."
         }
       ]
     },
