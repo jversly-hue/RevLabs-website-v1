@@ -11,10 +11,12 @@ export const translations = {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
       subheadline: "Zodat u sneller factureert, minder fouten maakt en meer grip krijgt op uw cashflow.",
       cta: "Plan een demo",
-      ctaSupport: "Vrijblijvend. In 15 minuten ziet u waar u tijd verliest.",
+      ctaSupport: "Bekijk concreet hoe uw workflow kan werken — aangepast aan uw bedrijf.",
+      ctaTrust: "Snel inzetbaar. Geen complexe implementatie.",
       learnMore: "Meer weten",
       audience: "Voor bedrijven die willen groeien zonder vast te lopen in administratie en manueel werk.",
-      audienceSupport: "Toepasbaar in elke sector."
+      audienceSupport: "Toepasbaar in elke sector.",
+      audienceCustom: "Geen standaard software — maar een oplossing op maat van uw werking."
     },
     problem: {
       title: "Waar verliest u vandaag tijd?",
@@ -64,11 +66,11 @@ export const translations = {
       items: [
         {
           title: "Werkbon → Factuur",
-          description: "Uw technieker vult een werkbon in — de factuur staat automatisch klaar.\n\nGeen overtypen. Minder fouten. Snellere facturatie."
+          description: "Uw technieker vult een werkbon in — de factuur staat automatisch klaar.\n\nGeen overtypen. Minder fouten. Snellere facturatie.\n\nU wint tijd op elke job."
         },
         {
           title: "Lead opvolging",
-          description: "Inkomende leads worden automatisch gestructureerd en opgevolgd.\n\nU focust enkel op de klanten die echt tellen."
+          description: "Inkomende leads worden automatisch gestructureerd en opgevolgd.\n\nU focust enkel op de klanten die echt tellen.\n\nGeen kansen meer die verloren gaan."
         }
       ]
     },
@@ -185,10 +187,12 @@ export const translations = {
       headline: "More control. Less administration. Better cashflow.",
       subheadline: "So you invoice faster, make fewer errors, and get more grip on your cashflow.",
       cta: "Book a demo",
-      ctaSupport: "No obligations. In 15 minutes you'll see where you're losing time.",
+      ctaSupport: "See concretely how your workflow can work — tailored to your business.",
+      ctaTrust: "Quick to deploy. No complex implementation.",
       learnMore: "Learn more",
       audience: "For businesses that want to grow without getting stuck in administration and manual work.",
-      audienceSupport: "Applicable in every sector."
+      audienceSupport: "Applicable in every sector.",
+      audienceCustom: "No standard software — but a solution tailored to your operation."
     },
     problem: {
       title: "Where are you losing time today?",
@@ -238,11 +242,11 @@ export const translations = {
       items: [
         {
           title: "Work order → Invoice",
-          description: "Your technician fills out a work order — the invoice is automatically ready.\n\nNo retyping. Fewer errors. Faster invoicing."
+          description: "Your technician fills out a work order — the invoice is automatically ready.\n\nNo retyping. Fewer errors. Faster invoicing.\n\nYou save time on every job."
         },
         {
           title: "Lead follow-up",
-          description: "Incoming leads are automatically structured and followed up.\n\nYou focus only on the customers that truly matter."
+          description: "Incoming leads are automatically structured and followed up.\n\nYou focus only on the customers that truly matter.\n\nNo more opportunities lost."
         }
       ]
     },

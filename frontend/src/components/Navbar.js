@@ -36,17 +36,15 @@ const Navbar = () => {
     >
       <div className="max-w-[1140px] mx-auto px-6">
         <div className="flex items-center justify-between h-[72px]">
-          {/* Logo */}
+          {/* Logo - Text based, thick and italic */}
           <a 
             href="/" 
             className="flex items-center"
             data-testid="logo"
           >
-            <img 
-              src="/revlabs_horizontal_final.png" 
-              alt="RevLabs" 
-              className="h-8 w-auto"
-            />
+            <span className="text-[22px] font-black italic text-[#E8E8EC] tracking-tight">
+              RevLabs
+            </span>
           </a>
 
           {/* Desktop Navigation */}

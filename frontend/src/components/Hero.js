@@ -33,11 +33,14 @@ const Hero = () => {
       <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-28 pb-24">
         <div className="max-w-[720px]">
           {/* Target audience text */}
-          <p className="text-[14px] text-[#9CA3AF] mb-2 animate-fade-up">
+          <p className="text-[14px] text-[#9CA3AF] mb-1 animate-fade-up">
             {t('hero.audience')}
           </p>
-          <p className="text-[12px] text-[#6B7280] mb-10 animate-fade-up">
+          <p className="text-[12px] text-[#6B7280] mb-2 animate-fade-up">
             {t('hero.audienceSupport')}
+          </p>
+          <p className="text-[13px] text-[#A78BFA]/70 mb-10 animate-fade-up">
+            {t('hero.audienceCustom')}
           </p>
 
           {/* Headline */}
@@ -81,8 +84,13 @@ const Hero = () => {
             </div>
 
             {/* Supporting text */}
-            <p className="text-[13px] text-[#6B7280] max-w-[420px] leading-[1.6]">
+            <p className="text-[13px] text-[#6B7280] max-w-[420px] leading-[1.6] mb-3">
               {t('hero.ctaSupport')}
+            </p>
+            
+            {/* Trust element */}
+            <p className="text-[12px] text-[#A78BFA]/60">
+              {t('hero.ctaTrust')}
             </p>
           </div>
         </div>
