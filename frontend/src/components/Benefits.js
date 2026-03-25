@@ -7,23 +7,20 @@ const Benefits = () => {
 
   return (
     <section 
-      className="relative py-24 lg:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
       data-testid="benefits-section"
     >
-      {/* Background glow */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(204,255,0,0.04)_0%,transparent_60%)]" />
-      
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-20 lg:gap-24 items-center">
           {/* Content */}
           <div>
             <h2 
-              className="font-chivo text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F2F2F2] tracking-tight mb-4"
+              className="font-chivo text-3xl sm:text-4xl font-bold text-[#FAFAFA] tracking-tight mb-4"
               data-testid="benefits-title"
             >
               {t('benefits.title')}
             </h2>
-            <p className="font-manrope text-base lg:text-lg text-[#A3A3A3] mb-10">
+            <p className="font-manrope text-base text-[#A1A1AA] mb-12">
               {t('benefits.subtitle')}
             </p>
 
@@ -35,10 +32,10 @@ const Benefits = () => {
                   className="flex items-start gap-4 group"
                   data-testid={`benefit-${index + 1}`}
                 >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#CCFF00]/10 border border-[#CCFF00]/20 flex items-center justify-center group-hover:bg-[#CCFF00]/20 transition-colors duration-300">
-                    <Check className="w-4 h-4 text-[#CCFF00]" />
+                  <div className="flex-shrink-0 w-6 h-6 rounded-md bg-[#18181B] border border-white/[0.06] flex items-center justify-center group-hover:border-[#A78BFA]/20 transition-colors duration-300">
+                    <Check className="w-3.5 h-3.5 text-[#A78BFA]" />
                   </div>
-                  <span className="font-manrope text-[#F2F2F2] text-base lg:text-lg pt-1">
+                  <span className="font-manrope text-[#FAFAFA] text-base">
                     {benefit}
                   </span>
                 </div>
@@ -46,31 +43,28 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Visual */}
+          {/* Visual - Stats */}
           <div className="relative">
-            <div className="relative p-8 rounded-3xl bg-[#121212] border border-white/5">
+            <div className="relative p-8 rounded-2xl bg-[#0F0F12] border border-white/[0.06]">
               {/* Stats grid */}
               <div className="grid grid-cols-2 gap-4">
-                <div className="p-6 rounded-2xl bg-[#171717] border border-[#CCFF00]/10">
-                  <div className="font-chivo text-4xl lg:text-5xl font-black text-[#CCFF00] mb-2">60%</div>
-                  <div className="font-manrope text-sm text-[#A3A3A3]">Minder administratie</div>
+                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
+                  <div className="font-chivo text-4xl font-bold text-[#A78BFA] mb-2">60%</div>
+                  <div className="font-manrope text-sm text-[#A1A1AA]">Minder administratie</div>
                 </div>
-                <div className="p-6 rounded-2xl bg-[#171717] border border-white/5">
-                  <div className="font-chivo text-4xl lg:text-5xl font-black text-[#F2F2F2] mb-2">3x</div>
-                  <div className="font-manrope text-sm text-[#A3A3A3]">Snellere facturatie</div>
+                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
+                  <div className="font-chivo text-4xl font-bold text-[#FAFAFA] mb-2">3x</div>
+                  <div className="font-manrope text-sm text-[#A1A1AA]">Snellere facturatie</div>
                 </div>
-                <div className="p-6 rounded-2xl bg-[#171717] border border-white/5">
-                  <div className="font-chivo text-4xl lg:text-5xl font-black text-[#F2F2F2] mb-2">90%</div>
-                  <div className="font-manrope text-sm text-[#A3A3A3]">Minder fouten</div>
+                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
+                  <div className="font-chivo text-4xl font-bold text-[#FAFAFA] mb-2">90%</div>
+                  <div className="font-manrope text-sm text-[#A1A1AA]">Minder fouten</div>
                 </div>
-                <div className="p-6 rounded-2xl bg-[#171717] border border-[#8B5CF6]/10">
-                  <div className="font-chivo text-4xl lg:text-5xl font-black text-[#8B5CF6] mb-2">24/7</div>
-                  <div className="font-manrope text-sm text-[#A3A3A3]">Geautomatiseerd</div>
+                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
+                  <div className="font-chivo text-4xl font-bold text-[#67E8F9] mb-2">24/7</div>
+                  <div className="font-manrope text-sm text-[#A1A1AA]">Geautomatiseerd</div>
                 </div>
               </div>
-
-              {/* Decorative glow */}
-              <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-[#CCFF00]/10 via-transparent to-[#8B5CF6]/5 opacity-50 pointer-events-none" />
             </div>
           </div>
         </div>

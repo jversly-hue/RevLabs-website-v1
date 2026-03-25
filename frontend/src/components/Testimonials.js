@@ -13,24 +13,19 @@ const Testimonials = () => {
 
   return (
     <section 
-      className="relative py-24 lg:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
       data-testid="testimonials-section"
     >
-      {/* Background */}
-      <div className="absolute inset-0 bg-[#0A0A0A]">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-[radial-gradient(ellipse,rgba(204,255,0,0.03)_0%,transparent_70%)]" />
-      </div>
-      
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="relative max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 lg:mb-20">
+        <div className="text-center mb-20">
           <h2 
-            className="font-chivo text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F2F2F2] tracking-tight mb-4"
+            className="font-chivo text-3xl sm:text-4xl font-bold text-[#FAFAFA] tracking-tight mb-4"
             data-testid="testimonials-title"
           >
             {t('testimonials.title')}
           </h2>
-          <p className="font-manrope text-base lg:text-lg text-[#A3A3A3] max-w-xl mx-auto">
+          <p className="font-manrope text-base text-[#A1A1AA] max-w-lg mx-auto">
             {t('testimonials.subtitle')}
           </p>
         </div>
@@ -40,22 +35,22 @@ const Testimonials = () => {
           {t('testimonials.items').map((testimonial, index) => (
             <div 
               key={index}
-              className="group relative p-8 rounded-2xl bg-[#121212] border border-white/5 hover:border-white/10 transition-all duration-500"
+              className="group relative p-8 rounded-xl bg-[#0F0F12] border border-white/[0.06] hover:border-white/[0.1] transition-colors duration-300"
               data-testid={`testimonial-${index + 1}`}
             >
               {/* Quote icon */}
               <div className="absolute top-6 right-6">
-                <Quote className="w-8 h-8 text-[#CCFF00]/20" />
+                <Quote className="w-6 h-6 text-white/[0.06]" />
               </div>
               
               {/* Content */}
-              <p className="font-manrope text-[#A3A3A3] text-sm lg:text-base leading-relaxed mb-8 relative z-10">
+              <p className="font-manrope text-[#A1A1AA] text-sm leading-relaxed mb-8 relative z-10">
                 "{testimonial.quote}"
               </p>
               
               {/* Author */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#CCFF00]/20">
+                <div className="w-10 h-10 rounded-full overflow-hidden border border-white/[0.08]">
                   <img 
                     src={avatarUrls[index]} 
                     alt={testimonial.name}
@@ -64,10 +59,10 @@ const Testimonials = () => {
                   />
                 </div>
                 <div>
-                  <div className="font-chivo text-[#F2F2F2] font-bold text-sm">
+                  <div className="font-chivo text-[#FAFAFA] font-semibold text-sm">
                     {testimonial.name}
                   </div>
-                  <div className="font-manrope text-[#525252] text-xs">
+                  <div className="font-manrope text-[#52525B] text-xs">
                     {testimonial.role}
                   </div>
                 </div>
@@ -75,7 +70,7 @@ const Testimonials = () => {
 
               {/* Industry badge */}
               <div className="absolute bottom-8 right-8">
-                <span className="inline-block px-3 py-1 rounded-full bg-[#171717] border border-white/5 font-manrope text-[10px] text-[#525252] uppercase tracking-wider">
+                <span className="inline-block px-2.5 py-1 rounded-full bg-[#18181B] border border-white/[0.04] font-manrope text-[10px] text-[#52525B] uppercase tracking-wider">
                   {testimonial.industry}
                 </span>
               </div>

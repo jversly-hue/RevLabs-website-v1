@@ -9,22 +9,19 @@ const HowItWorks = () => {
 
   return (
     <section 
-      className="relative py-24 lg:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
       data-testid="how-it-works-section"
     >
-      {/* Background elements */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full bg-[radial-gradient(circle,rgba(204,255,0,0.02)_0%,transparent_60%)]" />
-      
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16 lg:mb-20">
+        <div className="text-center mb-20">
           <h2 
-            className="font-chivo text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F2F2F2] tracking-tight mb-4"
+            className="font-chivo text-3xl sm:text-4xl font-bold text-[#FAFAFA] tracking-tight mb-4"
             data-testid="how-it-works-title"
           >
             {t('howItWorks.title')}
           </h2>
-          <p className="font-manrope text-base lg:text-lg text-[#A3A3A3] max-w-xl mx-auto">
+          <p className="font-manrope text-base text-[#A1A1AA] max-w-lg mx-auto">
             {t('howItWorks.subtitle')}
           </p>
         </div>
@@ -32,7 +29,7 @@ const HowItWorks = () => {
         {/* Steps */}
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
           {/* Connection line */}
-          <div className="hidden md:block absolute top-24 left-[16.66%] right-[16.66%] h-px bg-gradient-to-r from-transparent via-[#CCFF00]/30 to-transparent" />
+          <div className="hidden md:block absolute top-20 left-[20%] right-[20%] h-px bg-gradient-to-r from-transparent via-white/[0.08] to-transparent" />
           
           {t('howItWorks.steps').map((step, index) => {
             const Icon = icons[index];
@@ -43,28 +40,28 @@ const HowItWorks = () => {
                 data-testid={`step-${index + 1}`}
               >
                 {/* Step card */}
-                <div className="relative p-8 lg:p-10 rounded-2xl bg-[#121212] border border-white/5 hover:border-[#CCFF00]/20 transition-all duration-500 group-hover:shadow-[0_0_40px_rgba(204,255,0,0.08)]">
+                <div className="relative p-8 lg:p-10 rounded-xl bg-[#0F0F12] border border-white/[0.06] hover:border-white/[0.1] transition-colors duration-300">
                   {/* Step number */}
-                  <div className="absolute -top-4 left-8 px-4 py-1 bg-[#0A0A0A] border border-[#CCFF00]/20 rounded-full">
-                    <span className="font-mono text-sm text-[#CCFF00] font-medium">{step.number}</span>
+                  <div className="absolute -top-3 left-8 px-3 py-0.5 bg-[#09090B] border border-white/[0.08] rounded-full">
+                    <span className="font-mono text-xs text-[#A1A1AA] font-medium">{step.number}</span>
                   </div>
                   
                   {/* Icon */}
-                  <div className="w-14 h-14 rounded-xl bg-[#CCFF00]/10 border border-[#CCFF00]/20 flex items-center justify-center mb-6 group-hover:bg-[#CCFF00]/15 transition-colors duration-300">
-                    <Icon className="w-7 h-7 text-[#CCFF00]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#18181B] border border-white/[0.06] flex items-center justify-center mb-6 group-hover:border-[#A78BFA]/20 transition-colors duration-300">
+                    <Icon className="w-5 h-5 text-[#A1A1AA] group-hover:text-[#A78BFA] transition-colors duration-300" />
                   </div>
                   
                   {/* Content */}
-                  <h3 className="font-chivo text-xl lg:text-2xl font-bold text-[#F2F2F2] mb-3">
+                  <h3 className="font-chivo text-xl font-bold text-[#FAFAFA] mb-3">
                     {step.title}
                   </h3>
-                  <p className="font-manrope text-[#A3A3A3] text-sm lg:text-base leading-relaxed">
+                  <p className="font-manrope text-[#A1A1AA] text-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>
 
                 {/* Connection dot */}
-                <div className="hidden md:block absolute top-24 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#0A0A0A] border-2 border-[#CCFF00]/50 z-10" />
+                <div className="hidden md:block absolute top-20 left-1/2 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-[#09090B] border border-white/[0.15] z-10" />
               </div>
             );
           })}

@@ -66,22 +66,19 @@ const ContactForm = () => {
   return (
     <section 
       id="contact"
-      className="relative py-24 lg:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
       data-testid="contact-section"
     >
-      {/* Background */}
-      <div className="absolute top-0 left-0 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(139,92,246,0.03)_0%,transparent_70%)]" />
-      
-      <div className="max-w-3xl mx-auto px-6 lg:px-8">
+      <div className="max-w-2xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
+        <div className="text-center mb-16">
           <h2 
-            className="font-chivo text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F2F2F2] tracking-tight mb-4"
+            className="font-chivo text-3xl sm:text-4xl font-bold text-[#FAFAFA] tracking-tight mb-4"
             data-testid="contact-title"
           >
             {t('contact.title')}
           </h2>
-          <p className="font-manrope text-base lg:text-lg text-[#A3A3A3]">
+          <p className="font-manrope text-base text-[#A1A1AA]">
             {t('contact.subtitle')}
           </p>
         </div>
@@ -89,14 +86,14 @@ const ContactForm = () => {
         {/* Form */}
         <form 
           onSubmit={handleSubmit}
-          className="relative p-8 lg:p-10 rounded-2xl bg-[#121212] border border-white/5"
+          className="relative p-8 lg:p-10 rounded-xl bg-[#0F0F12] border border-white/[0.06]"
           data-testid="contact-form"
         >
           {/* Success/Error Messages */}
           {submitStatus === 'success' && (
-            <div className="mb-6 p-4 rounded-lg bg-[#CCFF00]/10 border border-[#CCFF00]/20 flex items-center gap-3" data-testid="form-success">
-              <CheckCircle className="w-5 h-5 text-[#CCFF00]" />
-              <span className="font-manrope text-sm text-[#CCFF00]">{t('contact.form.success')}</span>
+            <div className="mb-6 p-4 rounded-lg bg-[#A78BFA]/10 border border-[#A78BFA]/20 flex items-center gap-3" data-testid="form-success">
+              <CheckCircle className="w-5 h-5 text-[#A78BFA]" />
+              <span className="font-manrope text-sm text-[#A78BFA]">{t('contact.form.success')}</span>
             </div>
           )}
           {submitStatus === 'error' && (
@@ -106,10 +103,10 @@ const ContactForm = () => {
             </div>
           )}
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-5">
             {/* Name */}
             <div className="space-y-2">
-              <Label htmlFor="name" className="font-manrope text-sm text-[#A3A3A3]">
+              <Label htmlFor="name" className="font-manrope text-sm text-[#A1A1AA]">
                 {t('contact.form.name')} *
               </Label>
               <Input
@@ -119,14 +116,14 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder={t('contact.form.namePlaceholder')}
                 required
-                className="bg-[#171717] border-white/10 text-[#F2F2F2] placeholder:text-[#525252] focus:border-[#CCFF00]/50 focus:ring-[#CCFF00]/20"
+                className="bg-[#18181B] border-white/[0.08] text-[#FAFAFA] placeholder:text-[#52525B] focus:border-[#A78BFA]/50 focus:ring-[#A78BFA]/20 h-11"
                 data-testid="input-name"
               />
             </div>
 
             {/* Email */}
             <div className="space-y-2">
-              <Label htmlFor="email" className="font-manrope text-sm text-[#A3A3A3]">
+              <Label htmlFor="email" className="font-manrope text-sm text-[#A1A1AA]">
                 {t('contact.form.email')} *
               </Label>
               <Input
@@ -137,14 +134,14 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder={t('contact.form.emailPlaceholder')}
                 required
-                className="bg-[#171717] border-white/10 text-[#F2F2F2] placeholder:text-[#525252] focus:border-[#CCFF00]/50 focus:ring-[#CCFF00]/20"
+                className="bg-[#18181B] border-white/[0.08] text-[#FAFAFA] placeholder:text-[#52525B] focus:border-[#A78BFA]/50 focus:ring-[#A78BFA]/20 h-11"
                 data-testid="input-email"
               />
             </div>
 
             {/* Phone */}
             <div className="space-y-2">
-              <Label htmlFor="phone" className="font-manrope text-sm text-[#A3A3A3]">
+              <Label htmlFor="phone" className="font-manrope text-sm text-[#A1A1AA]">
                 {t('contact.form.phone')} *
               </Label>
               <Input
@@ -155,14 +152,14 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder={t('contact.form.phonePlaceholder')}
                 required
-                className="bg-[#171717] border-white/10 text-[#F2F2F2] placeholder:text-[#525252] focus:border-[#CCFF00]/50 focus:ring-[#CCFF00]/20"
+                className="bg-[#18181B] border-white/[0.08] text-[#FAFAFA] placeholder:text-[#52525B] focus:border-[#A78BFA]/50 focus:ring-[#A78BFA]/20 h-11"
                 data-testid="input-phone"
               />
             </div>
 
             {/* Company Name */}
             <div className="space-y-2">
-              <Label htmlFor="company_name" className="font-manrope text-sm text-[#A3A3A3]">
+              <Label htmlFor="company_name" className="font-manrope text-sm text-[#A1A1AA]">
                 {t('contact.form.company')} *
               </Label>
               <Input
@@ -172,31 +169,31 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder={t('contact.form.companyPlaceholder')}
                 required
-                className="bg-[#171717] border-white/10 text-[#F2F2F2] placeholder:text-[#525252] focus:border-[#CCFF00]/50 focus:ring-[#CCFF00]/20"
+                className="bg-[#18181B] border-white/[0.08] text-[#FAFAFA] placeholder:text-[#52525B] focus:border-[#A78BFA]/50 focus:ring-[#A78BFA]/20 h-11"
                 data-testid="input-company"
               />
             </div>
 
             {/* Industry */}
             <div className="space-y-2 md:col-span-2">
-              <Label htmlFor="industry" className="font-manrope text-sm text-[#A3A3A3]">
+              <Label htmlFor="industry" className="font-manrope text-sm text-[#A1A1AA]">
                 {t('contact.form.industry')} *
               </Label>
               <Select value={formData.industry} onValueChange={handleIndustryChange} required>
                 <SelectTrigger 
-                  className="bg-[#171717] border-white/10 text-[#F2F2F2] focus:border-[#CCFF00]/50 focus:ring-[#CCFF00]/20"
+                  className="bg-[#18181B] border-white/[0.08] text-[#FAFAFA] focus:border-[#A78BFA]/50 focus:ring-[#A78BFA]/20 h-11"
                   data-testid="select-industry"
                 >
                   <SelectValue placeholder={t('contact.form.industryPlaceholder')} />
                 </SelectTrigger>
-                <SelectContent className="bg-[#171717] border-white/10">
-                  <SelectItem value="dakwerken" className="text-[#F2F2F2] focus:bg-[#CCFF00]/10 focus:text-[#CCFF00]">
+                <SelectContent className="bg-[#18181B] border-white/[0.08]">
+                  <SelectItem value="dakwerken" className="text-[#FAFAFA] focus:bg-[#A78BFA]/10 focus:text-[#A78BFA]">
                     {t('contact.form.industries.dakwerken')}
                   </SelectItem>
-                  <SelectItem value="hvac" className="text-[#F2F2F2] focus:bg-[#CCFF00]/10 focus:text-[#CCFF00]">
+                  <SelectItem value="hvac" className="text-[#FAFAFA] focus:bg-[#A78BFA]/10 focus:text-[#A78BFA]">
                     {t('contact.form.industries.hvac')}
                   </SelectItem>
-                  <SelectItem value="other" className="text-[#F2F2F2] focus:bg-[#CCFF00]/10 focus:text-[#CCFF00]">
+                  <SelectItem value="other" className="text-[#FAFAFA] focus:bg-[#A78BFA]/10 focus:text-[#A78BFA]">
                     {t('contact.form.industries.other')}
                   </SelectItem>
                 </SelectContent>
@@ -205,7 +202,7 @@ const ContactForm = () => {
 
             {/* Message */}
             <div className="space-y-2 md:col-span-2">
-              <Label htmlFor="message" className="font-manrope text-sm text-[#A3A3A3]">
+              <Label htmlFor="message" className="font-manrope text-sm text-[#A1A1AA]">
                 {t('contact.form.message')}
               </Label>
               <Textarea
@@ -215,7 +212,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 placeholder={t('contact.form.messagePlaceholder')}
                 rows={4}
-                className="bg-[#171717] border-white/10 text-[#F2F2F2] placeholder:text-[#525252] focus:border-[#CCFF00]/50 focus:ring-[#CCFF00]/20 resize-none"
+                className="bg-[#18181B] border-white/[0.08] text-[#FAFAFA] placeholder:text-[#52525B] focus:border-[#A78BFA]/50 focus:ring-[#A78BFA]/20 resize-none"
                 data-testid="input-message"
               />
             </div>
@@ -225,17 +222,17 @@ const ContactForm = () => {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full mt-8 bg-[#CCFF00] text-[#0A0A0A] hover:bg-[#B3E600] font-manrope font-semibold py-6 rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(204,255,0,0.3)] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full mt-8 bg-[#A78BFA] text-[#09090B] hover:bg-[#C4B5FD] font-manrope font-medium py-6 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             data-testid="submit-button"
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                 {t('contact.form.submitting')}
               </>
             ) : (
               <>
-                <Send className="w-5 h-5 mr-2" />
+                <Send className="w-4 h-4 mr-2" />
                 {t('contact.form.submit')}
               </>
             )}
