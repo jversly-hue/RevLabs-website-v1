@@ -30,8 +30,8 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-32 pb-24">
-        <div className="max-w-[680px]">
+      <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-28 pb-24">
+        <div className="max-w-[720px]">
           {/* Small badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1E222A] border border-white/[0.06] mb-8 animate-fade-up">
             <span className="w-1.5 h-1.5 rounded-full bg-[#A78BFA]" />
@@ -42,7 +42,7 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 
-            className="text-[44px] sm:text-[52px] lg:text-[64px] font-semibold text-[#E8E8EC] tracking-[-0.025em] leading-[1.1] mb-6 animate-fade-up"
+            className="text-[44px] sm:text-[52px] lg:text-[64px] font-semibold text-[#E8E8EC] tracking-[-0.025em] leading-[1.1] mb-8 animate-fade-up"
             data-testid="hero-headline"
           >
             {t('hero.headline')}
@@ -50,30 +50,40 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p 
-            className="text-[17px] text-[#9CA3AF] leading-[1.7] mb-10 max-w-[520px] animate-fade-up-delay"
+            className="text-[18px] lg:text-[20px] text-[#9CA3AF] leading-[1.6] mb-12 max-w-[560px] animate-fade-up-delay"
             data-testid="hero-subheadline"
           >
             {t('hero.subheadline')}
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up-delay-2">
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 text-[14px] font-medium px-6 py-3 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg hover:from-[#B89DFB] hover:to-[#A78BFA] transition-all shadow-[0_2px_12px_rgba(167,139,250,0.25)] hover:shadow-[0_4px_20px_rgba(167,139,250,0.35)]"
-              data-testid="hero-cta"
-            >
-              {t('hero.cta')}
-              <ArrowRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
-            </a>
-            <a
-              href="#about"
-              className="inline-flex items-center text-[14px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors px-4 py-3"
-            >
-              Learn more
-            </a>
+          {/* CTA Section */}
+          <div className="animate-fade-up-delay-2">
+            {/* Primary CTA */}
+            <div className="flex flex-col sm:flex-row items-start gap-5 mb-4">
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2.5 text-[15px] font-semibold px-7 py-4 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg hover:from-[#B89DFB] hover:to-[#A78BFA] transition-all duration-200 shadow-[0_2px_12px_rgba(167,139,250,0.2)] hover:shadow-[0_4px_24px_rgba(167,139,250,0.3)]"
+                data-testid="hero-cta"
+              >
+                {t('hero.cta')}
+                <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform duration-200" />
+              </a>
+              
+              {/* Secondary CTA */}
+              <a
+                href="#about"
+                className="inline-flex items-center text-[14px] text-[#6B7280] hover:text-[#9CA3AF] transition-colors duration-200 px-2 py-4"
+              >
+                {t('hero.learnMore')}
+              </a>
+            </div>
+
+            {/* Supporting text */}
+            <p className="text-[13px] text-[#6B7280] max-w-[400px]">
+              {t('hero.ctaSupport')}
+            </p>
           </div>
         </div>
       </div>

@@ -9,8 +9,10 @@ export const translations = {
     },
     hero: {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
-      subheadline: "RevLabs automatiseert uw werkbonnen, leads en processen — zodat u sneller factureert, fouten vermijdt en meer overzicht krijgt.",
-      cta: "Plan een gratis intake"
+      subheadline: "Zodat u sneller factureert, minder fouten maakt en meer grip krijgt op uw cashflow.",
+      cta: "Plan uw gratis intake",
+      ctaSupport: "Ontdek in 15 minuten hoeveel tijd en geld u kan besparen.",
+      learnMore: "Meer weten"
     },
     problem: {
       title: "Het probleem",
@@ -162,8 +164,10 @@ export const translations = {
     },
     hero: {
       headline: "More control. Less administration. Better cashflow.",
-      subheadline: "RevLabs automates your work orders, leads, and processes — so you invoice faster, avoid errors, and gain more oversight.",
-      cta: "Book a free intake"
+      subheadline: "So you invoice faster, make fewer errors, and get more grip on your cashflow.",
+      cta: "Book your free intake",
+      ctaSupport: "Discover in 15 minutes how much time and money you can save.",
+      learnMore: "Learn more"
     },
     problem: {
       title: "The problem",
