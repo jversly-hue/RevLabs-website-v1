@@ -8,8 +8,8 @@ export const translations = {
       bookIntake: "Plan een gratis intake"
     },
     hero: {
-      headline: "Meer controle. Minder administratie. Slimmere workflows.",
-      subheadline: "RevLabs bouwt systemen die uw processen structureren en automatiseren — zodat u tijd bespaart, fouten vermindert en overzicht behoudt.",
+      headline: "Meer controle. Minder administratie. Betere cashflow.",
+      subheadline: "RevLabs automatiseert uw werkbonnen, leads en processen — zodat u sneller factureert, fouten vermijdt en meer overzicht krijgt.",
       cta: "Plan een gratis intake"
     },
     problem: {
@@ -161,8 +161,8 @@ export const translations = {
       bookIntake: "Book a free intake"
     },
     hero: {
-      headline: "More control. Less administration. Smarter workflows.",
-      subheadline: "RevLabs builds systems that structure and automate your processes — so you save time, reduce errors, and stay in control.",
+      headline: "More control. Less administration. Better cashflow.",
+      subheadline: "RevLabs automates your work orders, leads, and processes — so you invoice faster, avoid errors, and gain more oversight.",
       cta: "Book a free intake"
     },
     problem: {
