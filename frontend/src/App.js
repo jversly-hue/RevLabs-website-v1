@@ -1,53 +1,50 @@
-import { useEffect } from "react";
+import React from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import { LanguageProvider } from "./context/LanguageContext";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ProblemSolution from "./components/ProblemSolution";
+import HowItWorks from "./components/HowItWorks";
+import Systems from "./components/Systems";
+import Benefits from "./components/Benefits";
+import Testimonials from "./components/Testimonials";
+import CTABlock from "./components/CTABlock";
+import FAQ from "./components/FAQ";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
+const HomePage = () => {
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="min-h-screen bg-[#0A0A0A]">
+      <Navbar />
+      <main>
+        <Hero />
+        <ProblemSolution />
+        <HowItWorks />
+        <Systems />
+        <Benefits />
+        <Testimonials />
+        <CTABlock />
+        <FAQ />
+        <ContactForm />
+      </main>
+      <Footer />
     </div>
   );
 };
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </LanguageProvider>
   );
 }
 
