@@ -1,5 +1,4 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import {
   Accordion,
@@ -13,17 +12,17 @@ const FAQ = () => {
 
   return (
     <section 
-      className="relative py-24 lg:py-32 bg-black"
+      className="relative py-24 lg:py-32 bg-[#121418]"
       data-testid="faq-section"
     >
       <div className="max-w-[720px] mx-auto px-6">
         {/* Header */}
         <div className="mb-12">
-          <div className="text-[11px] font-medium text-[#555] uppercase tracking-[0.1em] mb-4">
+          <div className="text-[11px] font-medium text-[#6B7280] uppercase tracking-[0.12em] mb-4">
             FAQ
           </div>
           <h2 
-            className="text-[32px] lg:text-[40px] font-semibold text-white tracking-[-0.02em] leading-[1.1]"
+            className="text-[32px] lg:text-[40px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.15]"
             data-testid="faq-title"
           >
             {t('faq.title')}
@@ -31,27 +30,24 @@ const FAQ = () => {
         </div>
 
         {/* FAQ Items */}
-        <Accordion type="single" collapsible className="space-y-0">
+        <Accordion type="single" collapsible className="space-y-3">
           {t('faq.items').map((item, index) => (
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="border-b border-white/[0.06] py-0"
+              className="border border-white/[0.06] rounded-xl bg-gradient-to-b from-[#1E222A] to-[#1A1D22] px-6 data-[state=open]:border-[#A78BFA]/20 transition-colors"
               data-testid={`faq-item-${index + 1}`}
             >
-              <AccordionTrigger className="text-[15px] text-left text-white font-medium py-5 hover:no-underline hover:text-[#888] transition-colors [&[data-state=open]]:text-[#888]">
+              <AccordionTrigger className="text-[15px] text-left text-[#E8E8EC] font-medium py-5 hover:no-underline hover:text-[#A78BFA] transition-colors [&[data-state=open]]:text-[#A78BFA]">
                 {item.question}
               </AccordionTrigger>
-              <AccordionContent className="text-[14px] text-[#666] leading-[1.7] pb-5">
+              <AccordionContent className="text-[14px] text-[#9CA3AF] leading-[1.7] pb-5">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
       </div>
-
-      {/* Bottom line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06]" />
     </section>
   );
 };

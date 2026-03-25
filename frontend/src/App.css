@@ -1,6 +1,6 @@
-/* RevLabs - Stripe/Palantir Enterprise Design */
+/* RevLabs - Premium Industrial Tech Design */
 
-/* Minimal animations */
+/* Smooth animations */
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -9,7 +9,7 @@
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -17,46 +17,51 @@
   }
 }
 
+@keyframes subtle-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+}
+
 .animate-fade-in {
-  animation: fade-in 0.4s ease-out forwards;
+  animation: fade-in 0.5s ease-out forwards;
 }
 
 .animate-fade-up {
-  animation: fade-up 0.5s ease-out forwards;
+  animation: fade-up 0.6s ease-out forwards;
 }
 
 .animate-fade-up-delay {
-  animation: fade-up 0.5s ease-out 0.1s forwards;
+  animation: fade-up 0.6s ease-out 0.1s forwards;
   opacity: 0;
 }
 
 .animate-fade-up-delay-2 {
-  animation: fade-up 0.5s ease-out 0.2s forwards;
+  animation: fade-up 0.6s ease-out 0.2s forwards;
   opacity: 0;
 }
 
-/* Scrollbar - Minimal */
+/* Scrollbar - Industrial style */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #121418;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333333;
+  background: #2D323B;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444444;
+  background: #3D424D;
 }
 
 /* Selection */
 ::selection {
-  background: rgba(99, 91, 255, 0.3);
-  color: #FFFFFF;
+  background: rgba(167, 139, 250, 0.25);
+  color: #E8E8EC;
 }
 
 /* Smooth Scrolling */
@@ -67,22 +72,40 @@ html {
 /* Base */
 .App {
   min-height: 100vh;
-  background-color: #000000;
+  background-color: #121418;
 }
 
 /* Focus */
 *:focus-visible {
-  outline: 1px solid rgba(99, 91, 255, 0.5);
+  outline: 1px solid rgba(167, 139, 250, 0.4);
   outline-offset: 2px;
 }
 
 /* Transitions */
 a, button {
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
 }
 
-/* Gradient line */
-.gradient-line {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+/* Industrial card style */
+.industrial-card {
+  background: linear-gradient(180deg, #1E222A 0%, #1A1D22 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.03) inset,
+    0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Subtle metallic button */
+.btn-metallic {
+  background: linear-gradient(180deg, #A78BFA 0%, #9775FA 100%);
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.15) inset,
+    0 2px 8px 0 rgba(167, 139, 250, 0.25);
+}
+
+.btn-metallic:hover {
+  background: linear-gradient(180deg, #B89DFB 0%, #A78BFA 100%);
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.2) inset,
+    0 4px 16px 0 rgba(167, 139, 250, 0.3);
 }

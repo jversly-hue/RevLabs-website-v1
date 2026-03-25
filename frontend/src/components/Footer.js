@@ -7,17 +7,17 @@ const Footer = () => {
 
   return (
     <footer 
-      className="relative py-12 bg-black border-t border-white/[0.06]"
+      className="relative py-12 bg-[#121418] border-t border-white/[0.06]"
       data-testid="footer"
     >
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-[1140px] mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           {/* Logo & Tagline */}
           <div className="flex items-center gap-6">
-            <a href="/" className="text-[15px] font-semibold text-white tracking-[-0.01em]">
-              Rev<span className="text-[#B8860B]">Labs</span>
+            <a href="/" className="text-[16px] font-semibold text-[#E8E8EC] tracking-[-0.01em]">
+              Rev<span className="text-[#D4A574]">Labs</span>
             </a>
-            <span className="text-[13px] text-[#444]">
+            <span className="hidden sm:inline text-[13px] text-[#6B7280]">
               {t('footer.tagline')}
             </span>
           </div>
@@ -26,12 +26,12 @@ const Footer = () => {
           <div className="flex items-center gap-8">
             <a 
               href={`mailto:${t('footer.email')}`}
-              className="text-[13px] text-[#666] hover:text-white transition-colors"
+              className="text-[13px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors"
             >
               {t('footer.email')}
             </a>
-            <span className="text-[13px] text-[#333]">
-              &copy; {currentYear}
+            <span className="text-[13px] text-[#6B7280]">
+              &copy; {currentYear} RevLabs
             </span>
           </div>
         </div>

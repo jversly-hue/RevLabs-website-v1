@@ -7,63 +7,60 @@ const ProblemSolution = () => {
   return (
     <section 
       id="about"
-      className="relative py-24 lg:py-32 bg-black"
+      className="relative py-24 lg:py-32 bg-[#121418]"
       data-testid="problem-solution-section"
     >
-      <div className="max-w-[1200px] mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Problem */}
-          <div>
-            <div className="text-[11px] font-medium text-[#555] uppercase tracking-[0.1em] mb-4">
+      <div className="max-w-[1140px] mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+          {/* Problem Card */}
+          <div className="p-8 lg:p-10 rounded-2xl bg-gradient-to-b from-[#1E222A] to-[#1A1D22] border border-white/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.2)]">
+            <div className="text-[11px] font-medium text-[#6B7280] uppercase tracking-[0.12em] mb-5">
               The Problem
             </div>
             <h2 
-              className="text-[28px] lg:text-[32px] font-semibold text-white tracking-[-0.02em] leading-[1.2] mb-5"
+              className="text-[26px] lg:text-[30px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.25] mb-5"
               data-testid="problem-title"
             >
               {t('problem.title')}
             </h2>
-            <p className="text-[15px] text-[#888] leading-[1.7]">
+            <p className="text-[15px] text-[#9CA3AF] leading-[1.7] mb-8">
               {t('problem.description')}
             </p>
             
             {/* Visual indicator */}
-            <div className="mt-8 flex items-center gap-3">
-              <div className="flex gap-1">
+            <div className="flex items-center gap-3 pt-6 border-t border-white/[0.06]">
+              <div className="flex gap-1.5">
                 {[...Array(4)].map((_, i) => (
-                  <div key={i} className="w-8 h-1 bg-[#222] rounded-full" />
+                  <div key={i} className="w-8 h-1.5 bg-[#2D323B] rounded-full" />
                 ))}
               </div>
-              <span className="text-[12px] text-[#444]">Fragmented processes</span>
+              <span className="text-[12px] text-[#6B7280]">Fragmented processes</span>
             </div>
           </div>
 
-          {/* Solution */}
-          <div>
-            <div className="text-[11px] font-medium text-[#635BFF] uppercase tracking-[0.1em] mb-4">
+          {/* Solution Card */}
+          <div className="p-8 lg:p-10 rounded-2xl bg-gradient-to-b from-[#1E222A] to-[#1A1D22] border border-[#A78BFA]/10 shadow-[0_4px_24px_rgba(0,0,0,0.2),0_0_0_1px_rgba(167,139,250,0.05)]">
+            <div className="text-[11px] font-medium text-[#A78BFA] uppercase tracking-[0.12em] mb-5">
               The Solution
             </div>
             <h2 
-              className="text-[28px] lg:text-[32px] font-semibold text-white tracking-[-0.02em] leading-[1.2] mb-5"
+              className="text-[26px] lg:text-[30px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.25] mb-5"
               data-testid="solution-title"
             >
               {t('problem.solution.title')}
             </h2>
-            <p className="text-[15px] text-[#888] leading-[1.7]">
+            <p className="text-[15px] text-[#9CA3AF] leading-[1.7] mb-8">
               {t('problem.solution.description')}
             </p>
             
             {/* Visual indicator */}
-            <div className="mt-8 flex items-center gap-3">
-              <div className="w-32 h-1 bg-gradient-to-r from-[#635BFF] to-[#00D4FF] rounded-full" />
-              <span className="text-[12px] text-[#555]">Unified workflow</span>
+            <div className="flex items-center gap-3 pt-6 border-t border-white/[0.06]">
+              <div className="w-32 h-1.5 bg-gradient-to-r from-[#A78BFA] to-[#67E8F9] rounded-full" />
+              <span className="text-[12px] text-[#6B7280]">Unified workflow</span>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Bottom line */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06]" />
     </section>
   );
 };

@@ -28,42 +28,44 @@ const Navbar = () => {
   return (
     <nav 
       data-testid="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-        isScrolled ? 'bg-black/90 backdrop-blur-sm border-b border-white/[0.08]' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-[#121418]/95 backdrop-blur-md border-b border-white/[0.06]' 
+          : 'bg-transparent'
       }`}
     >
-      <div className="max-w-[1200px] mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-[1140px] mx-auto px-6">
+        <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <a 
             href="/" 
             className="flex items-center"
             data-testid="logo"
           >
-            <span className="text-[15px] font-semibold text-white tracking-[-0.01em]">
-              Rev<span className="text-[#B8860B]">Labs</span>
+            <span className="text-[16px] font-semibold text-[#E8E8EC] tracking-[-0.01em]">
+              Rev<span className="text-[#D4A574]">Labs</span>
             </span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-[13px] text-[#888] hover:text-white transition-colors"
+              className="text-[14px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors"
               data-testid="nav-services"
             >
               {t('nav.services')}
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-[13px] text-[#888] hover:text-white transition-colors"
+              className="text-[14px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors"
               data-testid="nav-about"
             >
               {t('nav.about')}
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-[13px] text-[#888] hover:text-white transition-colors"
+              className="text-[14px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors"
               data-testid="nav-contact"
             >
               {t('nav.contact')}
@@ -72,7 +74,7 @@ const Navbar = () => {
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
-              className="text-[13px] text-[#555] hover:text-[#888] transition-colors"
+              className="text-[13px] text-[#6B7280] hover:text-[#9CA3AF] transition-colors uppercase tracking-wide"
               data-testid="language-toggle"
             >
               {language === 'nl' ? 'EN' : 'NL'}
@@ -83,7 +85,7 @@ const Navbar = () => {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[13px] font-medium px-4 py-2 bg-white text-black rounded hover:bg-[#e5e5e5] transition-colors"
+              className="text-[14px] font-medium px-5 py-2.5 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg hover:from-[#B89DFB] hover:to-[#A78BFA] transition-all shadow-[0_2px_8px_rgba(167,139,250,0.25)] hover:shadow-[0_4px_16px_rgba(167,139,250,0.35)]"
               data-testid="nav-cta"
             >
               {t('nav.bookIntake')}
@@ -93,43 +95,43 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-[#888] hover:text-white"
+            className="md:hidden p-2 text-[#9CA3AF] hover:text-[#E8E8EC]"
             data-testid="mobile-menu-button"
           >
-            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div 
-            className="md:hidden absolute top-16 left-0 right-0 bg-black border-b border-white/[0.08] py-4 px-6"
+            className="md:hidden absolute top-[72px] left-0 right-0 bg-[#1A1D22] border-b border-white/[0.06] py-6 px-6"
             data-testid="mobile-menu"
           >
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               <button 
                 onClick={() => scrollToSection('services')}
-                className="text-[14px] text-[#888] hover:text-white transition-colors text-left py-3"
+                className="text-[15px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors text-left py-3"
               >
                 {t('nav.services')}
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-[14px] text-[#888] hover:text-white transition-colors text-left py-3"
+                className="text-[15px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors text-left py-3"
               >
                 {t('nav.about')}
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-[14px] text-[#888] hover:text-white transition-colors text-left py-3"
+                className="text-[15px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors text-left py-3"
               >
                 {t('nav.contact')}
               </button>
               
-              <div className="flex items-center justify-between pt-4 mt-2 border-t border-white/[0.08]">
+              <div className="flex items-center justify-between pt-4 mt-2 border-t border-white/[0.06]">
                 <button
                   onClick={toggleLanguage}
-                  className="text-[13px] text-[#555]"
+                  className="text-[13px] text-[#6B7280] uppercase tracking-wide"
                 >
                   {language === 'nl' ? 'Switch to English' : 'Schakel naar Nederlands'}
                 </button>
@@ -139,7 +141,7 @@ const Navbar = () => {
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[13px] font-medium px-4 py-3 bg-white text-black rounded text-center mt-4"
+                className="text-[14px] font-medium px-5 py-3 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg text-center mt-4"
               >
                 {t('nav.bookIntake')}
               </a>
