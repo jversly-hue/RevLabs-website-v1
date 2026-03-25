@@ -1,41 +1,48 @@
 import React from 'react';
-import { Check } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Benefits = () => {
   const { t } = useLanguage();
 
+  const stats = [
+    { value: '60%', label: 'Less admin work' },
+    { value: '3x', label: 'Faster invoicing' },
+    { value: '90%', label: 'Fewer errors' },
+    { value: '24/7', label: 'Automated' }
+  ];
+
   return (
     <section 
-      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
+      className="relative py-24 lg:py-32 bg-black"
       data-testid="benefits-section"
     >
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-20 lg:gap-24 items-center">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Content */}
           <div>
+            <div className="text-[11px] font-medium text-[#555] uppercase tracking-[0.1em] mb-4">
+              Results
+            </div>
             <h2 
-              className="font-chivo text-3xl sm:text-4xl font-bold text-[#FAFAFA] tracking-tight mb-4"
+              className="text-[32px] lg:text-[40px] font-semibold text-white tracking-[-0.02em] leading-[1.1] mb-6"
               data-testid="benefits-title"
             >
               {t('benefits.title')}
             </h2>
-            <p className="font-manrope text-base text-[#A1A1AA] mb-12">
+            <p className="text-[15px] text-[#888] leading-[1.7] mb-10">
               {t('benefits.subtitle')}
             </p>
 
             {/* Benefits List */}
-            <div className="space-y-5">
+            <div className="space-y-4">
               {t('benefits.items').map((benefit, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-4 group"
+                  className="flex items-center gap-3"
                   data-testid={`benefit-${index + 1}`}
                 >
-                  <div className="flex-shrink-0 w-6 h-6 rounded-md bg-[#18181B] border border-white/[0.06] flex items-center justify-center group-hover:border-[#A78BFA]/20 transition-colors duration-300">
-                    <Check className="w-3.5 h-3.5 text-[#A78BFA]" />
-                  </div>
-                  <span className="font-manrope text-[#FAFAFA] text-base">
+                  <div className="w-1 h-1 bg-[#635BFF] rounded-full" />
+                  <span className="text-[14px] text-[#888]">
                     {benefit}
                   </span>
                 </div>
@@ -43,32 +50,24 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Visual - Stats */}
-          <div className="relative">
-            <div className="relative p-8 rounded-2xl bg-[#0F0F12] border border-white/[0.06]">
-              {/* Stats grid */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
-                  <div className="font-chivo text-4xl font-bold text-[#A78BFA] mb-2">60%</div>
-                  <div className="font-manrope text-sm text-[#A1A1AA]">Minder administratie</div>
+          {/* Stats */}
+          <div className="grid grid-cols-2 gap-px bg-white/[0.06] rounded-lg overflow-hidden">
+            {stats.map((stat, index) => (
+              <div key={index} className="bg-black p-8">
+                <div className="text-[40px] lg:text-[48px] font-semibold text-white tracking-[-0.02em] mb-1">
+                  {stat.value}
                 </div>
-                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
-                  <div className="font-chivo text-4xl font-bold text-[#FAFAFA] mb-2">3x</div>
-                  <div className="font-manrope text-sm text-[#A1A1AA]">Snellere facturatie</div>
-                </div>
-                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
-                  <div className="font-chivo text-4xl font-bold text-[#FAFAFA] mb-2">90%</div>
-                  <div className="font-manrope text-sm text-[#A1A1AA]">Minder fouten</div>
-                </div>
-                <div className="p-6 rounded-xl bg-[#18181B] border border-white/[0.04]">
-                  <div className="font-chivo text-4xl font-bold text-[#67E8F9] mb-2">24/7</div>
-                  <div className="font-manrope text-sm text-[#A1A1AA]">Geautomatiseerd</div>
+                <div className="text-[13px] text-[#555]">
+                  {stat.label}
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+
+      {/* Bottom line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06]" />
     </section>
   );
 };

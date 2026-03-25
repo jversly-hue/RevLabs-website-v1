@@ -1,15 +1,15 @@
-/* RevLabs - Premium Corporate Dark Theme */
+/* RevLabs - Stripe/Palantir Enterprise Design */
 
-/* Subtle Animations */
+/* Minimal animations */
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-@keyframes fade-in-up {
+@keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -17,72 +17,46 @@
   }
 }
 
-@keyframes scroll-down {
-  0%, 100% {
-    opacity: 0.6;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.2;
-    transform: translateY(3px);
-  }
-}
-
-@keyframes subtle-pulse {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.6; }
-}
-
-/* Animation Classes */
 .animate-fade-in {
-  animation: fade-in 0.5s ease-out forwards;
+  animation: fade-in 0.4s ease-out forwards;
 }
 
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out forwards;
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out forwards;
 }
 
-.animate-fade-in-up-delay {
-  animation: fade-in-up 0.6s ease-out 0.15s forwards;
+.animate-fade-up-delay {
+  animation: fade-up 0.5s ease-out 0.1s forwards;
   opacity: 0;
 }
 
-.animate-fade-in-up-delay-2 {
-  animation: fade-in-up 0.6s ease-out 0.3s forwards;
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.5s ease-out 0.2s forwards;
   opacity: 0;
 }
 
-.animate-scroll-down {
-  animation: scroll-down 2s ease-in-out infinite;
-}
-
-.animate-subtle-pulse {
-  animation: subtle-pulse 4s ease-in-out infinite;
-}
-
-/* Scrollbar Styling - Minimal */
+/* Scrollbar - Minimal */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #09090B;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272A;
-  border-radius: 3px;
+  background: #333333;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3F3F46;
+  background: #444444;
 }
 
 /* Selection */
 ::selection {
-  background: rgba(167, 139, 250, 0.3);
-  color: #FAFAFA;
+  background: rgba(99, 91, 255, 0.3);
+  color: #FFFFFF;
 }
 
 /* Smooth Scrolling */
@@ -90,24 +64,25 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Base App Styles */
+/* Base */
 .App {
   min-height: 100vh;
-  background-color: #09090B;
+  background-color: #000000;
 }
 
-/* Focus Styles - Subtle */
+/* Focus */
 *:focus-visible {
-  outline: 1px solid rgba(167, 139, 250, 0.5);
+  outline: 1px solid rgba(99, 91, 255, 0.5);
   outline-offset: 2px;
 }
 
-/* Link hover transition */
-a {
-  transition: color 0.2s ease;
+/* Transitions */
+a, button {
+  transition: all 0.15s ease;
 }
 
-/* Button base transitions */
-button {
-  transition: all 0.2s ease;
+/* Gradient line */
+.gradient-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { AlertTriangle, Zap } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const ProblemSolution = () => {
@@ -8,90 +7,63 @@ const ProblemSolution = () => {
   return (
     <section 
       id="about"
-      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
+      className="relative py-24 lg:py-32 bg-black"
       data-testid="problem-solution-section"
     >
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-20 lg:gap-24 items-start">
-          {/* Problem Side */}
-          <div className="relative">
-            <div className="flex items-start gap-4 mb-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#27272A] flex items-center justify-center">
-                <AlertTriangle className="w-5 h-5 text-[#A1A1AA]" />
-              </div>
-              <div>
-                <h2 
-                  className="font-chivo text-2xl lg:text-3xl font-bold text-[#FAFAFA] tracking-tight mb-4"
-                  data-testid="problem-title"
-                >
-                  {t('problem.title')}
-                </h2>
-                <p className="font-manrope text-[#A1A1AA] text-base leading-relaxed">
-                  {t('problem.description')}
-                </p>
-              </div>
+      <div className="max-w-[1200px] mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+          {/* Problem */}
+          <div>
+            <div className="text-[11px] font-medium text-[#555] uppercase tracking-[0.1em] mb-4">
+              The Problem
             </div>
-
-            {/* Visual representation of chaos */}
-            <div className="mt-10 p-6 rounded-xl bg-[#0F0F12] border border-white/[0.06]">
-              <div className="grid grid-cols-3 gap-2.5">
-                {[...Array(6)].map((_, i) => (
-                  <div 
-                    key={i} 
-                    className="h-10 rounded-md bg-[#18181B] border border-white/[0.04]"
-                  />
+            <h2 
+              className="text-[28px] lg:text-[32px] font-semibold text-white tracking-[-0.02em] leading-[1.2] mb-5"
+              data-testid="problem-title"
+            >
+              {t('problem.title')}
+            </h2>
+            <p className="text-[15px] text-[#888] leading-[1.7]">
+              {t('problem.description')}
+            </p>
+            
+            {/* Visual indicator */}
+            <div className="mt-8 flex items-center gap-3">
+              <div className="flex gap-1">
+                {[...Array(4)].map((_, i) => (
+                  <div key={i} className="w-8 h-1 bg-[#222] rounded-full" />
                 ))}
               </div>
-              <div className="mt-4 flex items-center gap-2">
-                <div className="h-1.5 w-1.5 rounded-full bg-[#52525B]" />
-                <span className="font-manrope text-xs text-[#52525B]">Chaotische processen</span>
-              </div>
+              <span className="text-[12px] text-[#444]">Fragmented processes</span>
             </div>
           </div>
 
-          {/* Solution Side */}
-          <div className="relative">
-            <div className="flex items-start gap-4 mb-5">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#A78BFA]/10 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-[#A78BFA]" />
-              </div>
-              <div>
-                <h2 
-                  className="font-chivo text-2xl lg:text-3xl font-bold text-[#FAFAFA] tracking-tight mb-4"
-                  data-testid="solution-title"
-                >
-                  {t('problem.solution.title')}
-                </h2>
-                <p className="font-manrope text-[#A1A1AA] text-base leading-relaxed">
-                  {t('problem.solution.description')}
-                </p>
-              </div>
+          {/* Solution */}
+          <div>
+            <div className="text-[11px] font-medium text-[#635BFF] uppercase tracking-[0.1em] mb-4">
+              The Solution
             </div>
-
-            {/* Visual representation of control */}
-            <div className="mt-10 p-6 rounded-xl bg-[#0F0F12] border border-[#A78BFA]/10">
-              <div className="space-y-2.5">
-                {[...Array(3)].map((_, i) => (
-                  <div 
-                    key={i} 
-                    className="flex items-center gap-3"
-                  >
-                    <div className="w-2 h-2 rounded-full bg-[#A78BFA]" />
-                    <div className="flex-1 h-9 rounded-md bg-[#18181B] border border-white/[0.04]" />
-                    <div className="w-14 h-5 rounded bg-[#A78BFA]/10 flex items-center justify-center">
-                      <span className="font-mono text-[10px] text-[#A78BFA]">OK</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-4 flex items-center gap-2">
-                <div className="h-1.5 w-1.5 rounded-full bg-[#A78BFA]" />
-                <span className="font-manrope text-xs text-[#52525B]">Gestructureerde workflows</span>
-              </div>
+            <h2 
+              className="text-[28px] lg:text-[32px] font-semibold text-white tracking-[-0.02em] leading-[1.2] mb-5"
+              data-testid="solution-title"
+            >
+              {t('problem.solution.title')}
+            </h2>
+            <p className="text-[15px] text-[#888] leading-[1.7]">
+              {t('problem.solution.description')}
+            </p>
+            
+            {/* Visual indicator */}
+            <div className="mt-8 flex items-center gap-3">
+              <div className="w-32 h-1 bg-gradient-to-r from-[#635BFF] to-[#00D4FF] rounded-full" />
+              <span className="text-[12px] text-[#555]">Unified workflow</span>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Bottom line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06]" />
     </section>
   );
 };

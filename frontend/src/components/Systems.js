@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, UserCheck, ArrowRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const CALENDLY_URL = "https://calendly.com/revlabs";
@@ -7,71 +7,58 @@ const CALENDLY_URL = "https://calendly.com/revlabs";
 const Systems = () => {
   const { t } = useLanguage();
 
-  const icons = [FileText, UserCheck];
-
   return (
     <section 
       id="services"
-      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
+      className="relative py-24 lg:py-32 bg-black"
       data-testid="systems-section"
     >
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="mb-16">
+          <div className="text-[11px] font-medium text-[#555] uppercase tracking-[0.1em] mb-4">
+            Solutions
+          </div>
           <h2 
-            className="font-chivo text-3xl sm:text-4xl font-bold text-[#FAFAFA] tracking-tight mb-4"
+            className="text-[32px] lg:text-[40px] font-semibold text-white tracking-[-0.02em] leading-[1.1]"
             data-testid="systems-title"
           >
             {t('systems.title')}
           </h2>
-          <p className="font-manrope text-base text-[#A1A1AA] max-w-lg mx-auto">
-            {t('systems.subtitle')}
-          </p>
         </div>
 
-        {/* System Cards */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {t('systems.items').map((system, index) => {
-            const Icon = icons[index];
-            return (
-              <div 
-                key={index}
-                className="group relative p-8 lg:p-10 rounded-xl bg-[#0F0F12] border border-white/[0.06] hover:border-white/[0.1] transition-all duration-300"
-                data-testid={`system-card-${index + 1}`}
-              >
-                {/* Content */}
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="w-14 h-14 rounded-xl bg-[#18181B] border border-white/[0.06] flex items-center justify-center mb-6 group-hover:border-[#A78BFA]/20 transition-colors duration-300">
-                    <Icon className="w-6 h-6 text-[#A1A1AA] group-hover:text-[#A78BFA] transition-colors duration-300" />
-                  </div>
-                  
-                  {/* Title */}
-                  <h3 className="font-chivo text-xl font-bold text-[#FAFAFA] mb-4">
-                    {system.title}
-                  </h3>
-                  
-                  {/* Description */}
-                  <p className="font-manrope text-[#A1A1AA] text-sm leading-relaxed mb-6">
-                    {system.description}
-                  </p>
-                  
-                  {/* CTA Link */}
-                  <a
-                    href={CALENDLY_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 font-manrope text-sm text-[#A1A1AA] hover:text-[#A78BFA] transition-colors duration-200 group/link"
-                  >
-                    {t('nav.bookIntake')}
-                    <ArrowRight size={14} className="group-hover/link:translate-x-0.5 transition-transform duration-200" />
-                  </a>
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {t('systems.items').map((system, index) => (
+            <a
+              key={index}
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-8 lg:p-10 bg-[#0A0A0A] border border-white/[0.06] rounded-lg hover:border-white/[0.12] transition-colors"
+              data-testid={`system-card-${index + 1}`}
+            >
+              <div className="flex items-start justify-between mb-6">
+                <div className="text-[11px] font-medium text-[#444] uppercase tracking-[0.1em]">
+                  System {String(index + 1).padStart(2, '0')}
                 </div>
+                <ArrowUpRight size={16} className="text-[#333] group-hover:text-[#666] transition-colors" />
               </div>
-            );
-          })}
+              
+              <h3 className="text-[20px] font-semibold text-white tracking-[-0.01em] mb-4">
+                {system.title}
+              </h3>
+              
+              <p className="text-[14px] text-[#666] leading-[1.6]">
+                {system.description}
+              </p>
+            </a>
+          ))}
         </div>
       </div>
+
+      {/* Bottom line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06]" />
     </section>
   );
 };

@@ -1,83 +1,55 @@
 import React from 'react';
-import { Quote } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Testimonials = () => {
   const { t } = useLanguage();
 
-  const avatarUrls = [
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
-  ];
-
   return (
     <section 
-      className="relative py-28 lg:py-36 bg-[#09090B] overflow-hidden"
+      className="relative py-24 lg:py-32 bg-black"
       data-testid="testimonials-section"
     >
-      <div className="relative max-w-6xl mx-auto px-6 lg:px-8">
+      <div className="max-w-[1200px] mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="mb-16">
+          <div className="text-[11px] font-medium text-[#555] uppercase tracking-[0.1em] mb-4">
+            Testimonials
+          </div>
           <h2 
-            className="font-chivo text-3xl sm:text-4xl font-bold text-[#FAFAFA] tracking-tight mb-4"
+            className="text-[32px] lg:text-[40px] font-semibold text-white tracking-[-0.02em] leading-[1.1]"
             data-testid="testimonials-title"
           >
             {t('testimonials.title')}
           </h2>
-          <p className="font-manrope text-base text-[#A1A1AA] max-w-lg mx-auto">
-            {t('testimonials.subtitle')}
-          </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        {/* Testimonials */}
+        <div className="grid md:grid-cols-3 gap-6">
           {t('testimonials.items').map((testimonial, index) => (
             <div 
               key={index}
-              className="group relative p-8 rounded-xl bg-[#0F0F12] border border-white/[0.06] hover:border-white/[0.1] transition-colors duration-300"
+              className="p-8 bg-[#0A0A0A] border border-white/[0.06] rounded-lg"
               data-testid={`testimonial-${index + 1}`}
             >
-              {/* Quote icon */}
-              <div className="absolute top-6 right-6">
-                <Quote className="w-6 h-6 text-white/[0.06]" />
-              </div>
-              
-              {/* Content */}
-              <p className="font-manrope text-[#A1A1AA] text-sm leading-relaxed mb-8 relative z-10">
+              <p className="text-[14px] text-[#888] leading-[1.7] mb-8">
                 "{testimonial.quote}"
               </p>
               
-              {/* Author */}
-              <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full overflow-hidden border border-white/[0.08]">
-                  <img 
-                    src={avatarUrls[index]} 
-                    alt={testimonial.name}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
+              <div className="pt-6 border-t border-white/[0.06]">
+                <div className="text-[14px] font-medium text-white mb-1">
+                  {testimonial.name}
                 </div>
-                <div>
-                  <div className="font-chivo text-[#FAFAFA] font-semibold text-sm">
-                    {testimonial.name}
-                  </div>
-                  <div className="font-manrope text-[#52525B] text-xs">
-                    {testimonial.role}
-                  </div>
+                <div className="text-[12px] text-[#555]">
+                  {testimonial.role}
                 </div>
-              </div>
-
-              {/* Industry badge */}
-              <div className="absolute bottom-8 right-8">
-                <span className="inline-block px-2.5 py-1 rounded-full bg-[#18181B] border border-white/[0.04] font-manrope text-[10px] text-[#52525B] uppercase tracking-wider">
-                  {testimonial.industry}
-                </span>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Bottom line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06]" />
     </section>
   );
 };
