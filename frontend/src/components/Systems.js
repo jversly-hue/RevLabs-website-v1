@@ -53,7 +53,7 @@ const Systems = () => {
                   {system.title}
                 </h3>
                 
-                <p className="text-[14px] text-[#9CA3AF] leading-[1.65]">
+                <p className="text-[14px] text-[#9CA3AF] leading-[1.65] whitespace-pre-line">
                   {system.description}
                 </p>
               </a>

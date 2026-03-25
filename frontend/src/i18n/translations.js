@@ -5,13 +5,13 @@ export const translations = {
       services: "Diensten",
       about: "Over ons",
       contact: "Contact",
-      bookIntake: "Plan een gratis intake"
+      bookIntake: "Plan een demo"
     },
     hero: {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
       subheadline: "Zodat u sneller factureert, minder fouten maakt en meer grip krijgt op uw cashflow.",
-      cta: "Plan uw gratis intake",
-      ctaSupport: "Ontdek in 15 minuten hoeveel tijd en geld u kan besparen.",
+      cta: "Plan een demo",
+      ctaSupport: "Bekijk in 15 minuten hoe uw workflow efficiënter kan en waar u tijd en geld verliest.",
       learnMore: "Meer weten"
     },
     problem: {
@@ -19,83 +19,83 @@ export const translations = {
       description: "Veel bedrijven verliezen dagelijks tijd aan administratie, manuele werkbonnen en gemiste leads.",
       solution: {
         title: "De oplossing",
-        description: "RevLabs brengt structuur en automatisatie in uw workflow, zonder complexiteit."
+        description: "RevLabs brengt structuur in uw workflow — zonder complexiteit toe te voegen."
       }
     },
     howItWorks: {
       title: "Hoe het werkt",
-      subtitle: "Een gestroomlijnd proces van analyse tot implementatie",
+      subtitle: "Van analyse tot implementatie in drie stappen",
       steps: [
         {
           number: "01",
           title: "Analyse",
-          description: "Analyse van uw huidige workflow"
+          description: "We brengen uw huidige workflow in kaart"
         },
         {
           number: "02",
           title: "Opbouw",
-          description: "Opbouw van een op maat gemaakt systeem"
+          description: "We bouwen een systeem op maat"
         },
         {
           number: "03",
           title: "Implementatie",
-          description: "Implementatie + optimalisatie"
+          description: "We implementeren en optimaliseren"
         }
       ]
     },
     systems: {
-      title: "Onze systemen",
-      subtitle: "Automatisatie op maat voor uw bedrijf",
+      title: "Systemen",
+      subtitle: "Concrete oplossingen voor uw bedrijf",
       items: [
         {
-          title: "Werkbon → Factuur automatisatie",
-          description: "Techniekers vullen hun werkbon in en de factuur wordt automatisch voorbereid — klaar voor controle en verzending."
+          title: "Werkbon → Factuur",
+          description: "Uw technieker vult een werkbon in — de factuur staat automatisch klaar.\n\nGeen overtypen. Minder fouten. Snellere facturatie."
         },
         {
-          title: "Lead Qualification Automatisatie",
-          description: "Inkomende leads worden automatisch gefilterd, gestructureerd en opgevolgd zodat u focust op de juiste klanten."
+          title: "Lead opvolging",
+          description: "Nieuwe leads worden automatisch gestructureerd en opgevolgd.\n\nU focust enkel op de klanten die echt tellen."
         }
       ]
     },
     benefits: {
-      title: "Voordelen",
-      subtitle: "Waarom bedrijven kiezen voor RevLabs",
+      title: "Resultaten",
+      subtitle: "Wat onze klanten ervaren",
       items: [
         "Minder administratief werk",
         "Meer overzicht en controle",
         "Minder fouten",
-        "Snellere opvolging en facturatie",
-        "Efficiëntere werking van uw bedrijf"
+        "Snellere facturatie",
+        "Efficiëntere bedrijfsvoering"
       ]
     },
     testimonials: {
-      title: "Wat onze klanten zeggen",
-      subtitle: "Ervaringen van bedrijven zoals het uwe",
+      title: "Ervaringen",
+      subtitle: "Wat onze klanten zeggen",
       items: [
         {
           name: "Marc Janssen",
           role: "Eigenaar, Janssen Dakwerken",
-          quote: "Sinds we met RevLabs werken, besteden we 60% minder tijd aan administratie. De werkbon-naar-factuur automatisatie heeft ons bedrijf volledig getransformeerd.",
+          quote: "Sinds we met RevLabs werken, besteden we 60% minder tijd aan administratie. De werkbon-naar-factuur flow heeft ons bedrijf volledig veranderd.",
           industry: "Dakwerker"
         },
         {
           name: "Peter De Vries",
           role: "Directeur, KlimaComfort HVAC",
-          quote: "De lead qualification heeft ervoor gezorgd dat we nu alleen nog kwalitatieve aanvragen binnenkrijgen. Geen tijdverspilling meer aan verkeerde leads.",
-          industry: "HVAC Installateur"
+          quote: "We krijgen nu alleen nog kwalitatieve aanvragen binnen. Geen tijdverspilling meer aan verkeerde leads.",
+          industry: "HVAC"
         },
         {
           name: "Thomas Vermeer",
           role: "Zaakvoerder, Vermeer Bouw",
-          quote: "RevLabs heeft ons geholpen om de controle terug te krijgen over onze processen. We werken nu efficiënter dan ooit.",
-          industry: "Bouwbedrijf"
+          quote: "RevLabs heeft ons geholpen om de controle terug te krijgen. We werken nu efficiënter dan ooit.",
+          industry: "Bouw"
         }
       ]
     },
     cta: {
       title: "Stop met tijd verliezen aan manueel werk.",
-      subtitle: "Ontdek hoe RevLabs uw bedrijf kan transformeren",
-      button: "Plan uw gratis intake"
+      subtitle: "Ontdek waar uw workflow efficiënter kan",
+      button: "Plan een demo"
     },
     faq: {
       title: "Veelgestelde vragen",
@@ -106,12 +106,12 @@ export const translations = {
           answer: "Ja, elk systeem wordt volledig aangepast aan uw specifieke workflow en behoeften. We beginnen altijd met een grondige analyse van uw huidige processen."
         },
         {
-          question: "Hoe lang duurt implementatie?",
+          question: "Hoe lang duurt de implementatie?",
           answer: "De implementatietijd varieert afhankelijk van de complexiteit, maar de meeste systemen zijn binnen 2-4 weken operationeel."
         },
         {
           question: "Moet ik technisch onderlegd zijn?",
-          answer: "Nee, onze systemen zijn ontworpen om gebruiksvriendelijk te zijn. We zorgen voor een volledige training en ondersteuning."
+          answer: "Nee, onze systemen zijn ontworpen om gebruiksvriendelijk te zijn. We zorgen voor volledige training en ondersteuning."
         },
         {
           question: "Voor welke bedrijven is dit geschikt?",
@@ -120,7 +120,7 @@ export const translations = {
       ]
     },
     contact: {
-      title: "Neem contact op",
+      title: "Contact",
       subtitle: "Vul het formulier in en we nemen snel contact met u op",
       form: {
         name: "Naam",
@@ -160,13 +160,13 @@ export const translations = {
       services: "Services",
       about: "About us",
       contact: "Contact",
-      bookIntake: "Book a free intake"
+      bookIntake: "Book a demo"
     },
     hero: {
       headline: "More control. Less administration. Better cashflow.",
       subheadline: "So you invoice faster, make fewer errors, and get more grip on your cashflow.",
-      cta: "Book your free intake",
-      ctaSupport: "Discover in 15 minutes how much time and money you can save.",
+      cta: "Book a demo",
+      ctaSupport: "See in 15 minutes how your workflow can be more efficient and where you're losing time and money.",
       learnMore: "Learn more"
     },
     problem: {
@@ -174,83 +174,83 @@ export const translations = {
       description: "Many businesses lose time daily on administration, manual work orders, and missed leads.",
       solution: {
         title: "The solution",
-        description: "RevLabs brings structure and automation to your workflow without adding complexity."
+        description: "RevLabs brings structure to your workflow — without adding complexity."
       }
     },
     howItWorks: {
       title: "How it works",
-      subtitle: "A streamlined process from analysis to implementation",
+      subtitle: "From analysis to implementation in three steps",
       steps: [
         {
           number: "01",
           title: "Analysis",
-          description: "Analysis of your current workflow"
+          description: "We map out your current workflow"
         },
         {
           number: "02",
           title: "Build",
-          description: "Building a custom-made system"
+          description: "We build a custom system"
         },
         {
           number: "03",
           title: "Implementation",
-          description: "Implementation + optimization"
+          description: "We implement and optimize"
         }
       ]
     },
     systems: {
-      title: "Our systems",
-      subtitle: "Custom automation for your business",
+      title: "Systems",
+      subtitle: "Concrete solutions for your business",
       items: [
         {
-          title: "Work Order → Invoice Automation",
-          description: "Technicians fill out their work order and the invoice is automatically prepared — ready for review and sending."
+          title: "Work order → Invoice",
+          description: "Your technician fills out a work order — the invoice is automatically ready.\n\nNo retyping. Fewer errors. Faster invoicing."
         },
         {
-          title: "Lead Qualification Automation",
-          description: "Incoming leads are automatically filtered, structured, and followed up so you focus on the right customers."
+          title: "Lead follow-up",
+          description: "New leads are automatically structured and followed up.\n\nYou focus only on the customers that truly matter."
         }
       ]
     },
     benefits: {
-      title: "Benefits",
-      subtitle: "Why businesses choose RevLabs",
+      title: "Results",
+      subtitle: "What our clients experience",
       items: [
         "Less administrative work",
         "More overview and control",
         "Fewer errors",
-        "Faster follow-up and invoicing",
-        "More efficient business operations"
+        "Faster invoicing",
+        "More efficient operations"
       ]
     },
     testimonials: {
-      title: "What our clients say",
-      subtitle: "Experiences from businesses like yours",
+      title: "Experiences",
+      subtitle: "What our clients say",
       items: [
         {
           name: "Marc Janssen",
           role: "Owner, Janssen Roofing",
-          quote: "Since working with RevLabs, we spend 60% less time on administration. The work order-to-invoice automation has completely transformed our business.",
-          industry: "Roofer"
+          quote: "Since working with RevLabs, we spend 60% less time on administration. The work order-to-invoice flow has completely changed our business.",
+          industry: "Roofing"
         },
         {
           name: "Peter De Vries",
           role: "Director, KlimaComfort HVAC",
-          quote: "The lead qualification has ensured that we now only receive quality inquiries. No more wasting time on wrong leads.",
-          industry: "HVAC Installer"
+          quote: "We now only receive quality inquiries. No more wasting time on wrong leads.",
+          industry: "HVAC"
         },
         {
           name: "Thomas Vermeer",
           role: "Manager, Vermeer Construction",
-          quote: "RevLabs helped us regain control over our processes. We now work more efficiently than ever.",
+          quote: "RevLabs helped us regain control. We now work more efficiently than ever.",
           industry: "Construction"
         }
       ]
     },
     cta: {
       title: "Stop wasting time on manual work.",
-      subtitle: "Discover how RevLabs can transform your business",
-      button: "Book your free intake"
+      subtitle: "Discover where your workflow can be more efficient",
+      button: "Book a demo"
     },
     faq: {
       title: "Frequently asked questions",
@@ -275,7 +275,7 @@ export const translations = {
       ]
     },
     contact: {
-      title: "Get in touch",
+      title: "Contact",
       subtitle: "Fill out the form and we'll contact you soon",
       form: {
         name: "Name",
