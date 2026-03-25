@@ -15,11 +15,17 @@ export const translations = {
       learnMore: "Meer weten"
     },
     problem: {
-      title: "Het probleem",
-      description: "Veel bedrijven verliezen dagelijks tijd aan administratie, manuele werkbonnen en gemiste leads.",
+      title: "Waar verliest u vandaag tijd?",
+      description: "Veel bedrijven verliezen dagelijks tijd aan manueel werk dat perfect geautomatiseerd kan worden.",
+      points: [
+        "Werkbonnen die achteraf verwerkt worden",
+        "Facturen die pas 's avonds worden opgesteld",
+        "Leads die niet of te laat opgevolgd worden"
+      ],
       solution: {
-        title: "De oplossing",
-        description: "RevLabs brengt structuur in uw workflow — zonder complexiteit toe te voegen."
+        title: "Meer structuur. Minder manueel werk.",
+        description: "RevLabs brengt structuur in uw workflow en automatiseert repetitieve taken — zonder complexiteit toe te voegen.",
+        support: "U behoudt de controle, terwijl uw processen efficiënter verlopen."
       }
     },
     howItWorks: {
@@ -170,11 +176,17 @@ export const translations = {
       learnMore: "Learn more"
     },
     problem: {
-      title: "The problem",
-      description: "Many businesses lose time daily on administration, manual work orders, and missed leads.",
+      title: "Where are you losing time today?",
+      description: "Many businesses lose time daily on manual work that can be perfectly automated.",
+      points: [
+        "Work orders processed after the fact",
+        "Invoices only created in the evening",
+        "Leads that are not or too late followed up"
+      ],
       solution: {
-        title: "The solution",
-        description: "RevLabs brings structure to your workflow — without adding complexity."
+        title: "More structure. Less manual work.",
+        description: "RevLabs brings structure to your workflow and automates repetitive tasks — without adding complexity.",
+        support: "You keep control, while your processes run more efficiently."
       }
     },
     howItWorks: {
