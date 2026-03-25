@@ -14,8 +14,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           {/* Logo & Tagline */}
           <div className="flex items-center gap-6">
-            <a href="/" className="text-[16px] font-semibold text-[#E8E8EC] tracking-[-0.01em]">
-              Rev<span className="text-[#D4A574]">Labs</span>
+            <a href="/">
+              <img 
+                src="/revlabs_horizontal_final.png" 
+                alt="RevLabs" 
+                className="h-7 w-auto opacity-80"
+              />
             </a>
             <span className="hidden sm:inline text-[13px] text-[#6B7280]">
               {t('footer.tagline')}

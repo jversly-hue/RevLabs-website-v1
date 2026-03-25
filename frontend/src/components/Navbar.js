@@ -42,9 +42,11 @@ const Navbar = () => {
             className="flex items-center"
             data-testid="logo"
           >
-            <span className="text-[16px] font-semibold text-[#E8E8EC] tracking-[-0.01em]">
-              Rev<span className="text-[#D4A574]">Labs</span>
-            </span>
+            <img 
+              src="/revlabs_horizontal_final.png" 
+              alt="RevLabs" 
+              className="h-8 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -85,7 +87,7 @@ const Navbar = () => {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[14px] font-medium px-5 py-2.5 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg hover:from-[#B89DFB] hover:to-[#A78BFA] transition-all shadow-[0_2px_8px_rgba(167,139,250,0.25)] hover:shadow-[0_4px_16px_rgba(167,139,250,0.35)]"
+              className="text-[14px] font-medium px-5 py-2.5 bg-gradient-to-b from-[#A78BFA] to-[#9775FA] text-[#121418] rounded-lg hover:from-[#B89DFB] hover:to-[#A78BFA] transition-all shadow-[0_2px_8px_rgba(167,139,250,0.2)] hover:shadow-[0_4px_16px_rgba(167,139,250,0.3)]"
               data-testid="nav-cta"
             >
               {t('nav.bookIntake')}

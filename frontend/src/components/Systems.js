@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Users, ArrowUpRight } from 'lucide-react';
+import { FileText, Users, ArrowUpRight, Shield, Settings, Zap } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const CALENDLY_URL = "https://calendly.com/revlabs";
@@ -16,16 +16,32 @@ const Systems = () => {
     >
       <div className="max-w-[1140px] mx-auto px-6">
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-12">
           <div className="text-[11px] font-medium text-[#6B7280] uppercase tracking-[0.12em] mb-4">
             {t('systems.label')}
           </div>
           <h2 
-            className="text-[32px] lg:text-[40px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.15]"
+            className="text-[32px] lg:text-[40px] font-semibold text-[#E8E8EC] tracking-[-0.02em] leading-[1.15] mb-4"
             data-testid="systems-title"
           >
             {t('systems.title')}
           </h2>
+          
+          {/* Trust indicators */}
+          <div className="flex flex-wrap gap-6 mt-6">
+            <div className="flex items-center gap-2">
+              <Shield className="w-4 h-4 text-[#6B7280]" />
+              <span className="text-[13px] text-[#6B7280]">{t('systems.trust.noObligation')}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Settings className="w-4 h-4 text-[#6B7280]" />
+              <span className="text-[13px] text-[#6B7280]">{t('systems.trust.custom')}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Zap className="w-4 h-4 text-[#6B7280]" />
+              <span className="text-[13px] text-[#6B7280]">{t('systems.trust.fast')}</span>
+            </div>
+          </div>
         </div>
 
         {/* Cards */}

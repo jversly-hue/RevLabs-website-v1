@@ -11,8 +11,10 @@ export const translations = {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
       subheadline: "Zodat u sneller factureert, minder fouten maakt en meer grip krijgt op uw cashflow.",
       cta: "Plan een demo",
-      ctaSupport: "Bekijk in 15 minuten hoe uw workflow efficiënter kan en waar u tijd en geld verliest.",
-      learnMore: "Meer weten"
+      ctaSupport: "Vrijblijvend. In 15 minuten ziet u waar u tijd verliest.",
+      learnMore: "Meer weten",
+      audience: "Voor bedrijven die willen groeien zonder vast te lopen in administratie en manueel werk.",
+      audienceSupport: "Toepasbaar in elke sector."
     },
     problem: {
       title: "Waar verliest u vandaag tijd?",
@@ -54,6 +56,11 @@ export const translations = {
       label: "Oplossingen",
       title: "Systemen",
       subtitle: "Concrete oplossingen voor uw bedrijf",
+      trust: {
+        noObligation: "Geen verplichtingen",
+        custom: "Op maat van uw bedrijf",
+        fast: "Snelle implementatie"
+      },
       items: [
         {
           title: "Werkbon → Factuur",
@@ -178,8 +185,10 @@ export const translations = {
       headline: "More control. Less administration. Better cashflow.",
       subheadline: "So you invoice faster, make fewer errors, and get more grip on your cashflow.",
       cta: "Book a demo",
-      ctaSupport: "See in 15 minutes how your workflow can be more efficient and where you're losing time and money.",
-      learnMore: "Learn more"
+      ctaSupport: "No obligations. In 15 minutes you'll see where you're losing time.",
+      learnMore: "Learn more",
+      audience: "For businesses that want to grow without getting stuck in administration and manual work.",
+      audienceSupport: "Applicable in every sector."
     },
     problem: {
       title: "Where are you losing time today?",
@@ -221,6 +230,11 @@ export const translations = {
       label: "Solutions",
       title: "Systems",
       subtitle: "Concrete solutions for your business",
+      trust: {
+        noObligation: "No obligations",
+        custom: "Tailored to your business",
+        fast: "Fast implementation"
+      },
       items: [
         {
           title: "Work order → Invoice",
