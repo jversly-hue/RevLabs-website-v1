@@ -32,17 +32,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-28 pb-24">
         <div className="max-w-[720px]">
-          {/* Target audience text */}
-          <p className="text-[14px] text-[#9CA3AF] mb-1 animate-fade-up">
-            {t('hero.audience')}
-          </p>
-          <p className="text-[12px] text-[#6B7280] mb-2 animate-fade-up">
-            {t('hero.audienceSupport')}
-          </p>
-          <p className="text-[13px] text-[#A78BFA]/70 mb-10 animate-fade-up">
-            {t('hero.audienceCustom')}
-          </p>
-
           {/* Headline */}
           <h1 
             className="text-[42px] sm:text-[50px] lg:text-[60px] font-semibold text-[#E8E8EC] tracking-[-0.025em] leading-[1.1] mb-8 animate-fade-up"

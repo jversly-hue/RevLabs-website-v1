@@ -135,7 +135,7 @@ export const translations = {
         },
         {
           question: "Voor welke bedrijven is dit geschikt?",
-          answer: "Voor bedrijven die geen tijd of geld meer willen verliezen aan eindeloze administratie.\n\nGeen standaard software, maar een oplossing op maat."
+          answer: "Voor bedrijven die willen groeien zonder vast te lopen in administratie en manueel werk.\n\nToepasbaar in elke sector. Geen standaard software — maar een oplossing op maat van uw werking."
         }
       ]
     },
@@ -311,7 +311,7 @@ export const translations = {
         },
         {
           question: "Which businesses is this suitable for?",
-          answer: "For businesses that no longer want to lose time or money on endless administration.\n\nNo standard software, but a tailor-made solution."
+          answer: "For businesses that want to grow without getting stuck in administration and manual work.\n\nApplicable in every sector. No standard software — but a solution tailored to your operation."
         }
       ]
     },
