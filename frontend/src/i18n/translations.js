@@ -11,12 +11,12 @@ export const translations = {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
       subheadline: "Automatiseer uw lead opvolging en facturatie — zodat u meer deals sluit en sneller betaald wordt.",
       cta: "Plan een demo",
-      ctaSupport: "Bekijk concreet hoe uw workflow kan werken — aangepast aan uw bedrijf.",
+      ctaSupport: "Ontdek welke modules passen bij uw workflow.",
       ctaTrust: "Snel inzetbaar. Geen complexe implementatie.",
       learnMore: "Meer weten",
       audience: "Voor bedrijven die willen groeien zonder vast te lopen in administratie en manueel werk.",
       audienceSupport: "Toepasbaar in elke sector.",
-      audienceCustom: "Geen standaard software — maar een oplossing op maat van uw werking."
+      audienceCustom: "Modulaire systemen die u combineert naar behoefte."
     },
     problem: {
       title: "Waar verliest u vandaag tijd?",
@@ -45,7 +45,7 @@ export const translations = {
         {
           number: "02",
           title: "Opbouw",
-          description: "We bouwen een systeem op maat dat naadloos aansluit op uw manier van werken."
+          description: "We selecteren de juiste modules en configureren ze voor uw manier van werken."
         },
         {
           number: "03",
@@ -55,12 +55,12 @@ export const translations = {
       ]
     },
     systems: {
-      label: "Oplossingen",
-      title: "Systemen",
-      subtitle: "Concrete oplossingen voor uw bedrijf",
+      label: "Modules",
+      title: "Onze Modules",
+      subtitle: "Kies en combineer naar behoefte",
       trust: {
         noObligation: "Geen verplichtingen",
-        custom: "Op maat van uw bedrijf",
+        custom: "Modulair & combineerbaar",
         fast: "Snelle implementatie"
       },
       items: [
@@ -122,8 +122,8 @@ export const translations = {
       subtitle: "Antwoorden op de meest voorkomende vragen",
       items: [
         {
-          question: "Is dit op maat van mijn bedrijf?",
-          answer: "Ja, elk systeem wordt volledig aangepast aan uw specifieke workflow en behoeften. We beginnen altijd met een grondige analyse van uw huidige processen."
+          question: "Kan ik modules combineren?",
+          answer: "Ja, onze systemen zijn modulair opgebouwd. U kiest de modules die u nodig heeft — zoals Lead Qualification of Werkbon → Factuur — en combineert ze naar behoefte. Zo betaalt u alleen voor wat u gebruikt."
         },
         {
           question: "Hoe lang duurt de implementatie?",
@@ -135,7 +135,7 @@ export const translations = {
         },
         {
           question: "Voor welke bedrijven is dit geschikt?",
-          answer: "Voor bedrijven die willen groeien zonder vast te lopen in administratie en manueel werk.\n\nToepasbaar in elke sector. Geen standaard software — maar een oplossing op maat van uw werking."
+          answer: "Voor bedrijven die willen groeien zonder vast te lopen in administratie en manueel werk.\n\nToepasbaar in elke sector. Modulaire systemen die u combineert naar behoefte."
         }
       ]
     },
@@ -187,12 +187,12 @@ export const translations = {
       headline: "More control. Less administration. Better cashflow.",
       subheadline: "Automate your lead follow-up and invoicing — so you close more deals and get paid faster.",
       cta: "Book a demo",
-      ctaSupport: "See concretely how your workflow can work — tailored to your business.",
+      ctaSupport: "Discover which modules fit your workflow.",
       ctaTrust: "Quick to deploy. No complex implementation.",
       learnMore: "Learn more",
       audience: "For businesses that want to grow without getting stuck in administration and manual work.",
       audienceSupport: "Applicable in every sector.",
-      audienceCustom: "No standard software — but a solution tailored to your operation."
+      audienceCustom: "Modular systems you combine as needed."
     },
     problem: {
       title: "Where are you losing time today?",
@@ -221,7 +221,7 @@ export const translations = {
         {
           number: "02",
           title: "Build",
-          description: "We build a custom system that seamlessly fits your way of working."
+          description: "We select the right modules and configure them for your way of working."
         },
         {
           number: "03",
@@ -231,12 +231,12 @@ export const translations = {
       ]
     },
     systems: {
-      label: "Solutions",
-      title: "Systems",
-      subtitle: "Concrete solutions for your business",
+      label: "Modules",
+      title: "Our Modules",
+      subtitle: "Choose and combine as needed",
       trust: {
         noObligation: "No obligations",
-        custom: "Tailored to your business",
+        custom: "Modular & combinable",
         fast: "Fast implementation"
       },
       items: [
@@ -298,8 +298,8 @@ export const translations = {
       subtitle: "Answers to the most common questions",
       items: [
         {
-          question: "Is this tailored to my business?",
-          answer: "Yes, every system is fully customized to your specific workflow and needs. We always start with a thorough analysis of your current processes."
+          question: "Can I combine modules?",
+          answer: "Yes, our systems are modular. You choose the modules you need — like Lead Qualification or Work order → Invoice — and combine them as needed. This way you only pay for what you use."
         },
         {
           question: "How long does implementation take?",
@@ -311,7 +311,7 @@ export const translations = {
         },
         {
           question: "Which businesses is this suitable for?",
-          answer: "For businesses that want to grow without getting stuck in administration and manual work.\n\nApplicable in every sector. No standard software — but a solution tailored to your operation."
+          answer: "For businesses that want to grow without getting stuck in administration and manual work.\n\nApplicable in every sector. Modular systems you combine as needed."
         }
       ]
     },

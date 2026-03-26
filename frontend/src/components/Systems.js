@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Users, ArrowUpRight, Shield, Settings, Zap, Target } from 'lucide-react';
+import { FileText, Users, ArrowUpRight, Shield, Layers, Zap, Target } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const CALENDLY_URL = "https://calendly.com/revlabs";
@@ -34,7 +34,7 @@ const Systems = () => {
               <span className="text-[13px] text-[#6B7280]">{t('systems.trust.noObligation')}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Settings className="w-4 h-4 text-[#6B7280]" />
+              <Layers className="w-4 h-4 text-[#6B7280]" />
               <span className="text-[13px] text-[#6B7280]">{t('systems.trust.custom')}</span>
             </div>
             <div className="flex items-center gap-2">
