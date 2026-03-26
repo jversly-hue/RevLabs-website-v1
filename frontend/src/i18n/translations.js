@@ -65,8 +65,8 @@ export const translations = {
       },
       items: [
         {
-          title: "Geautomatiseerde Lead Qualification",
-          description: "Elke binnenkomende lead wordt automatisch gekwalificeerd, geprioriteerd en opgevolgd.\n\nU spreekt alleen nog met serieuze prospects die klaar zijn om te kopen.\n\nMeer deals sluiten. Minder tijd verspillen aan koude leads."
+          title: "Lead Qualification & Opvolging",
+          description: "Elke binnenkomende lead wordt automatisch gekwalificeerd én direct opgevolgd — zodat u geen enkele kans verliest aan de concurrentie.\n\nU spreekt alleen met serieuze prospects die klaar zijn om te kopen.\n\nSneller reageren. Meer deals sluiten."
         },
         {
           title: "Werkbon → Factuur",
@@ -123,7 +123,7 @@ export const translations = {
       items: [
         {
           question: "Kan ik systemen combineren?",
-          answer: "Ja, onze systemen zijn modulair opgebouwd. U kiest de systemen die u nodig heeft — zoals Lead Qualification of Werkbon → Factuur — en combineert ze naar behoefte. Zo betaalt u alleen voor wat u gebruikt."
+          answer: "Ja, onze systemen zijn modulair opgebouwd. U kiest de systemen die u nodig heeft — zoals Lead Qualification & Opvolging of Werkbon → Factuur — en combineert ze naar behoefte. Zo betaalt u alleen voor wat u gebruikt."
         },
         {
           question: "Hoe lang duurt de implementatie?",
@@ -241,8 +241,8 @@ export const translations = {
       },
       items: [
         {
-          title: "Automated Lead Qualification",
-          description: "Every incoming lead is automatically qualified, prioritized, and followed up.\n\nYou only talk to serious prospects who are ready to buy.\n\nClose more deals. Waste less time on cold leads."
+          title: "Lead Qualification & Follow-up",
+          description: "Every incoming lead is automatically qualified and immediately followed up — so you never lose an opportunity to the competition.\n\nYou only talk to serious prospects who are ready to buy.\n\nRespond faster. Close more deals."
         },
         {
           title: "Work order → Invoice",
