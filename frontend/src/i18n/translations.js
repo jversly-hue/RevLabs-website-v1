@@ -11,7 +11,7 @@ export const translations = {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
       subheadline: "Automatiseer uw lead opvolging en facturatie — zodat u meer deals sluit en sneller betaald wordt.",
       cta: "Plan een demo",
-      ctaSupport: "Ontdek welke modules passen bij uw workflow.",
+      ctaSupport: "Ontdek welke systemen passen bij uw workflow.",
       ctaTrust: "Snel inzetbaar. Geen complexe implementatie.",
       learnMore: "Meer weten",
       audience: "Voor bedrijven die willen groeien zonder vast te lopen in administratie en manueel werk.",
@@ -45,7 +45,7 @@ export const translations = {
         {
           number: "02",
           title: "Opbouw",
-          description: "We selecteren de juiste modules en configureren ze voor uw manier van werken."
+          description: "We selecteren de juiste systemen en configureren ze voor uw manier van werken."
         },
         {
           number: "03",
@@ -55,8 +55,8 @@ export const translations = {
       ]
     },
     systems: {
-      label: "Modules",
-      title: "Onze Modules",
+      label: "Systemen",
+      title: "Onze Systemen",
       subtitle: "Kies en combineer naar behoefte",
       trust: {
         noObligation: "Geen verplichtingen",
@@ -122,8 +122,8 @@ export const translations = {
       subtitle: "Antwoorden op de meest voorkomende vragen",
       items: [
         {
-          question: "Kan ik modules combineren?",
-          answer: "Ja, onze systemen zijn modulair opgebouwd. U kiest de modules die u nodig heeft — zoals Lead Qualification of Werkbon → Factuur — en combineert ze naar behoefte. Zo betaalt u alleen voor wat u gebruikt."
+          question: "Kan ik systemen combineren?",
+          answer: "Ja, onze systemen zijn modulair opgebouwd. U kiest de systemen die u nodig heeft — zoals Lead Qualification of Werkbon → Factuur — en combineert ze naar behoefte. Zo betaalt u alleen voor wat u gebruikt."
         },
         {
           question: "Hoe lang duurt de implementatie?",
@@ -187,7 +187,7 @@ export const translations = {
       headline: "More control. Less administration. Better cashflow.",
       subheadline: "Automate your lead follow-up and invoicing — so you close more deals and get paid faster.",
       cta: "Book a demo",
-      ctaSupport: "Discover which modules fit your workflow.",
+      ctaSupport: "Discover which systems fit your workflow.",
       ctaTrust: "Quick to deploy. No complex implementation.",
       learnMore: "Learn more",
       audience: "For businesses that want to grow without getting stuck in administration and manual work.",
@@ -221,7 +221,7 @@ export const translations = {
         {
           number: "02",
           title: "Build",
-          description: "We select the right modules and configure them for your way of working."
+          description: "We select the right systems and configure them for your way of working."
         },
         {
           number: "03",
@@ -231,8 +231,8 @@ export const translations = {
       ]
     },
     systems: {
-      label: "Modules",
-      title: "Our Modules",
+      label: "Systems",
+      title: "Our Systems",
       subtitle: "Choose and combine as needed",
       trust: {
         noObligation: "No obligations",
@@ -298,8 +298,8 @@ export const translations = {
       subtitle: "Answers to the most common questions",
       items: [
         {
-          question: "Can I combine modules?",
-          answer: "Yes, our systems are modular. You choose the modules you need — like Lead Qualification or Work order → Invoice — and combine them as needed. This way you only pay for what you use."
+          question: "Can I combine systems?",
+          answer: "Yes, our systems are modular. You choose the systems you need — like Lead Qualification or Work order → Invoice — and combine them as needed. This way you only pay for what you use."
         },
         {
           question: "How long does implementation take?",
