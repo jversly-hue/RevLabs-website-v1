@@ -12,7 +12,7 @@ const FAQ = () => {
 
   return (
     <section 
-      className="relative py-28 lg:py-36 bg-[#121418]"
+      className="relative py-16 lg:py-20 bg-[#121418]"
       data-testid="faq-section"
     >
       <div className="max-w-[720px] mx-auto px-6">

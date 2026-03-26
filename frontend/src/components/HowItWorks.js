@@ -8,7 +8,7 @@ const HowItWorks = () => {
 
   return (
     <section 
-      className="relative py-28 lg:py-36"
+      className="relative py-16 lg:py-20"
       style={{ background: 'linear-gradient(180deg, #121418 0%, #161A20 100%)' }}
       data-testid="how-it-works-section"
     >

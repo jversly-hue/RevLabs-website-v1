@@ -14,7 +14,7 @@ const Benefits = () => {
 
   return (
     <section 
-      className="relative py-28 lg:py-36"
+      className="relative py-16 lg:py-20"
       style={{ background: 'linear-gradient(180deg, #161A20 0%, #121418 100%)' }}
       data-testid="benefits-section"
     >

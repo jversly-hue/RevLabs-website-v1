@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section 
-      className="relative min-h-[100vh] flex items-center overflow-hidden"
+      className="relative min-h-[75vh] flex items-center overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #121418 0%, #161A20 50%, #121418 100%)' }}
       data-testid="hero-section"
     >
@@ -30,7 +30,7 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-28 pb-24">
+      <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-24 pb-16">
         <div className="max-w-[720px]">
           {/* Headline */}
           <h1 
