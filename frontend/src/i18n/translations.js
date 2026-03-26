@@ -127,7 +127,7 @@ export const translations = {
         },
         {
           question: "Hoe lang duurt de implementatie?",
-          answer: "De implementatietijd varieert afhankelijk van de complexiteit, maar de meeste systemen zijn binnen 2-4 weken operationeel."
+          answer: "De meeste systemen zijn binnen 48 uur operationeel. We zorgen voor een snelle opstart zonder complexe trajecten."
         },
         {
           question: "Moet ik technisch onderlegd zijn?",
@@ -303,7 +303,7 @@ export const translations = {
         },
         {
           question: "How long does implementation take?",
-          answer: "Implementation time varies depending on complexity, but most systems are operational within 2-4 weeks."
+          answer: "Most systems are operational within 48 hours. We ensure a quick start without complex processes."
         },
         {
           question: "Do I need to be technically skilled?",
