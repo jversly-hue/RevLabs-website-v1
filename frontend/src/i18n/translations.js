@@ -9,7 +9,7 @@ export const translations = {
     },
     hero: {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
-      subheadline: "Zodat u sneller factureert, minder fouten maakt en meer grip krijgt op uw cashflow.",
+      subheadline: "Automatiseer uw lead opvolging en facturatie — zodat u meer deals sluit en sneller betaald wordt.",
       cta: "Plan een demo",
       ctaSupport: "Bekijk concreet hoe uw workflow kan werken — aangepast aan uw bedrijf.",
       ctaTrust: "Snel inzetbaar. Geen complexe implementatie.",
@@ -22,9 +22,9 @@ export const translations = {
       title: "Waar verliest u vandaag tijd?",
       description: "Veel bedrijven verliezen dagelijks tijd aan manueel werk dat perfect geautomatiseerd kan worden.",
       points: [
-        "Werkbonnen die achteraf verwerkt worden",
-        "Facturen die pas 's avonds worden opgesteld",
-        "Leads die niet of te laat opgevolgd worden"
+        "Leads die niet of te laat opgevolgd worden",
+        "Geen inzicht in welke leads écht koopklaar zijn",
+        "Facturen die pas 's avonds worden opgesteld"
       ],
       solution: {
         title: "Meer structuur. Minder manueel werk.",
@@ -65,12 +65,12 @@ export const translations = {
       },
       items: [
         {
-          title: "Werkbon → Factuur",
-          description: "Uw technieker vult een werkbon in — de factuur staat automatisch klaar.\n\nGeen overtypen. Minder fouten. Snellere facturatie.\n\nU wint tijd op elke job."
+          title: "Geautomatiseerde Lead Qualification",
+          description: "Elke binnenkomende lead wordt automatisch gekwalificeerd, geprioriteerd en opgevolgd.\n\nU spreekt alleen nog met serieuze prospects die klaar zijn om te kopen.\n\nMeer deals sluiten. Minder tijd verspillen aan koude leads."
         },
         {
-          title: "Lead opvolging",
-          description: "Inkomende leads worden automatisch gestructureerd en opgevolgd.\n\nU focust enkel op de klanten die echt tellen.\n\nGeen kansen meer die verloren gaan."
+          title: "Werkbon → Factuur",
+          description: "Uw technieker vult een werkbon in — de factuur staat automatisch klaar.\n\nGeen overtypen. Minder fouten. Snellere facturatie.\n\nU wint tijd op elke job."
         }
       ]
     },
@@ -185,7 +185,7 @@ export const translations = {
     },
     hero: {
       headline: "More control. Less administration. Better cashflow.",
-      subheadline: "So you invoice faster, make fewer errors, and get more grip on your cashflow.",
+      subheadline: "Automate your lead follow-up and invoicing — so you close more deals and get paid faster.",
       cta: "Book a demo",
       ctaSupport: "See concretely how your workflow can work — tailored to your business.",
       ctaTrust: "Quick to deploy. No complex implementation.",
@@ -198,9 +198,9 @@ export const translations = {
       title: "Where are you losing time today?",
       description: "Many businesses lose time daily on manual work that can be perfectly automated.",
       points: [
-        "Work orders processed after the fact",
-        "Invoices only created in the evening",
-        "Leads that are not or too late followed up"
+        "Leads that are not or too late followed up",
+        "No insight into which leads are truly ready to buy",
+        "Invoices only created in the evening"
       ],
       solution: {
         title: "More structure. Less manual work.",
@@ -241,12 +241,12 @@ export const translations = {
       },
       items: [
         {
-          title: "Work order → Invoice",
-          description: "Your technician fills out a work order — the invoice is automatically ready.\n\nNo retyping. Fewer errors. Faster invoicing.\n\nYou save time on every job."
+          title: "Automated Lead Qualification",
+          description: "Every incoming lead is automatically qualified, prioritized, and followed up.\n\nYou only talk to serious prospects who are ready to buy.\n\nClose more deals. Waste less time on cold leads."
         },
         {
-          title: "Lead follow-up",
-          description: "Incoming leads are automatically structured and followed up.\n\nYou focus only on the customers that truly matter.\n\nNo more opportunities lost."
+          title: "Work order → Invoice",
+          description: "Your technician fills out a work order — the invoice is automatically ready.\n\nNo retyping. Fewer errors. Faster invoicing.\n\nYou save time on every job."
         }
       ]
     },

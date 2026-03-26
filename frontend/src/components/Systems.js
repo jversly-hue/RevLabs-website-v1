@@ -1,12 +1,12 @@
 import React from 'react';
-import { FileText, Users, ArrowUpRight, Shield, Settings, Zap } from 'lucide-react';
+import { FileText, Users, ArrowUpRight, Shield, Settings, Zap, Target } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const CALENDLY_URL = "https://calendly.com/revlabs";
 
 const Systems = () => {
   const { t } = useLanguage();
-  const icons = [FileText, Users];
+  const icons = [Target, FileText];
 
   return (
     <section 
