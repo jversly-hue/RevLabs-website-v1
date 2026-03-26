@@ -9,7 +9,7 @@ export const translations = {
     },
     hero: {
       headline: "Meer controle. Minder administratie. Betere cashflow.",
-      subheadline: "Automatiseer uw lead opvolging en facturatie — zodat u meer deals sluit en sneller betaald wordt.",
+      subheadline: "Automatiseer uw lead opvolging en facturatie — zodat u uw agenda vult met de beste klanten en sneller betaald wordt.",
       cta: "Plan een demo",
       ctaSupport: "Ontdek welke systemen passen bij uw workflow.",
       ctaTrust: "Snel inzetbaar. Geen complexe implementatie.",
@@ -23,8 +23,8 @@ export const translations = {
       description: "Veel bedrijven verliezen dagelijks tijd aan manueel werk dat perfect geautomatiseerd kan worden.",
       points: [
         "Leads die niet of te laat opgevolgd worden",
-        "Geen inzicht in welke leads écht koopklaar zijn",
-        "Facturen die pas 's avonds worden opgesteld"
+        "Omzet die onbewust verloren gaat door trage reactietijd",
+        "Facturen die blijven liggen en cashflow vertragen"
       ],
       solution: {
         title: "Meer structuur. Minder manueel werk.",
@@ -66,7 +66,7 @@ export const translations = {
       items: [
         {
           title: "Lead Qualification & Opvolging",
-          description: "Elke binnenkomende lead wordt automatisch gekwalificeerd én direct opgevolgd — zodat u geen enkele kans verliest aan de concurrentie.\n\nU spreekt alleen met serieuze prospects die klaar zijn om te kopen.\n\nSneller reageren. Meer deals sluiten."
+          description: "Elke binnenkomende lead wordt automatisch gekwalificeerd én direct opgevolgd — zodat u geen enkele kans verliest aan de concurrentie.\n\nUw agenda gevuld met enkel de beste prospects.\n\nGeen gemiste omzet meer door trage opvolging."
         },
         {
           title: "Werkbon → Factuur",
@@ -94,19 +94,19 @@ export const translations = {
         {
           name: "Marc Janssen",
           role: "Eigenaar, Janssen Dakwerken",
-          quote: "Sinds we met RevLabs werken, besteden we 60% minder tijd aan administratie. De werkbon-naar-factuur flow heeft ons bedrijf volledig veranderd.",
+          quote: "Sinds we met RevLabs werken, missen we geen enkele aanvraag meer. We merken het direct in onze planning — en eerlijk, ook in onze omzet.",
           industry: "Dakwerker"
         },
         {
           name: "Peter De Vries",
           role: "Directeur, KlimaComfort HVAC",
-          quote: "We krijgen nu alleen nog kwalitatieve aanvragen binnen. Geen tijdverspilling meer aan verkeerde leads.",
+          quote: "Vroeger gingen leads soms verloren in de drukte. Nu wordt elke aanvraag automatisch opgevolgd. Onze agenda zit voller met de juiste klanten.",
           industry: "HVAC"
         },
         {
           name: "Thomas Vermeer",
           role: "Zaakvoerder, Vermeer Bouw",
-          quote: "RevLabs heeft ons geholpen om de controle terug te krijgen. We werken nu efficiënter dan ooit.",
+          quote: "We reageren nu binnen het uur in plaats van dagen. Dat maakt een wereld van verschil — klanten kiezen sneller voor ons dan voor de concurrent.",
           industry: "Bouw"
         }
       ]
@@ -185,7 +185,7 @@ export const translations = {
     },
     hero: {
       headline: "More control. Less administration. Better cashflow.",
-      subheadline: "Automate your lead follow-up and invoicing — so you close more deals and get paid faster.",
+      subheadline: "Automate your lead follow-up and invoicing — so you fill your agenda with the best clients and get paid faster.",
       cta: "Book a demo",
       ctaSupport: "Discover which systems fit your workflow.",
       ctaTrust: "Quick to deploy. No complex implementation.",
@@ -199,8 +199,8 @@ export const translations = {
       description: "Many businesses lose time daily on manual work that can be perfectly automated.",
       points: [
         "Leads that are not or too late followed up",
-        "No insight into which leads are truly ready to buy",
-        "Invoices only created in the evening"
+        "Revenue unconsciously lost due to slow response time",
+        "Invoices that pile up and slow down cashflow"
       ],
       solution: {
         title: "More structure. Less manual work.",
@@ -242,7 +242,7 @@ export const translations = {
       items: [
         {
           title: "Lead Qualification & Follow-up",
-          description: "Every incoming lead is automatically qualified and immediately followed up — so you never lose an opportunity to the competition.\n\nYou only talk to serious prospects who are ready to buy.\n\nRespond faster. Close more deals."
+          description: "Every incoming lead is automatically qualified and immediately followed up — so you never lose an opportunity to the competition.\n\nYour agenda filled with only the best prospects.\n\nNo more missed revenue due to slow follow-up."
         },
         {
           title: "Work order → Invoice",
@@ -270,19 +270,19 @@ export const translations = {
         {
           name: "Marc Janssen",
           role: "Owner, Janssen Roofing",
-          quote: "Since working with RevLabs, we spend 60% less time on administration. The work order-to-invoice flow has completely changed our business.",
+          quote: "Since working with RevLabs, we don't miss a single inquiry anymore. We notice it directly in our planning — and honestly, also in our revenue.",
           industry: "Roofing"
         },
         {
           name: "Peter De Vries",
           role: "Director, KlimaComfort HVAC",
-          quote: "We now only receive quality inquiries. No more wasting time on wrong leads.",
+          quote: "Leads used to get lost in the rush. Now every inquiry is automatically followed up. Our agenda is fuller with the right clients.",
           industry: "HVAC"
         },
         {
           name: "Thomas Vermeer",
           role: "Manager, Vermeer Construction",
-          quote: "RevLabs helped us regain control. We now work more efficiently than ever.",
+          quote: "We now respond within the hour instead of days. That makes a world of difference — clients choose us faster than the competition.",
           industry: "Construction"
         }
       ]
