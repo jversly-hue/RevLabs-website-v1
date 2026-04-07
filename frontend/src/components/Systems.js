@@ -54,8 +54,7 @@ const Systems = () => {
             return (
               <div
                 key={index}
-                className="group block p-8 lg:p-10 rounded-2xl bg-gradient-to-b from-[#1E222A] to-[#1A1D22] border border-white/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.15)]"
-                data-testid={`system-card-${index + 1}`}
+className="group block p-8 lg:p-10 rounded-2xl bg-gradient-to-b from-[#1E222A] to-[#1A1D22] border border-white/[0.06] shadow-[0_4px_24px_rgba(0,0,0,0.15)] hover:border-[#A78BFA]/30 hover:shadow-[0_8px_40px_rgba(167,139,250,0.15)] transition-all duration-300"                data-testid={`system-card-${index + 1}`}
               >
                 <div className="flex items-start justify-between mb-6">
                   
