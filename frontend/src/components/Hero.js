@@ -10,25 +10,8 @@ const Hero = () => {
   return (
     <section 
       className="relative min-h-[75vh] flex items-center overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #121418 0%, #161A20 50%, #121418 100%)' }}
       data-testid="hero-section"
     >
-      {/* Subtle gradient orbs */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-[20%] left-[15%] w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(167,139,250,0.05)_0%,transparent_70%)]" />
-        <div className="absolute bottom-[20%] right-[10%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(103,232,249,0.03)_0%,transparent_70%)]" />
-      </div>
-
-      {/* Subtle grid pattern */}
-      <div 
-        className="absolute inset-0 opacity-[0.012]"
-        style={{
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)`,
-          backgroundSize: '80px 80px'
-        }}
-      />
-
       {/* Content */}
       <div className="relative z-10 max-w-[1140px] mx-auto px-6 pt-24 pb-16">
         <div className="max-w-[720px]">
