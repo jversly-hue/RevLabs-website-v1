@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-const CALENDLY_URL = "https://calendly.com/jversly/30min";
+const CALENDLY_URL = "https://calendly.com/thesalesthriveacademy/1-on-1-strategy-session";
 
 const CTABlock = () => {
   const { t } = useLanguage();
