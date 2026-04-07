@@ -30,6 +30,11 @@ const HomePage = () => {
         <CTABlock />
         <FAQ />
         <ContactForm />
+        <div
+  className="calendly-inline-widget"
+  data-url="https://calendly.com/jversly/30min?hide_gdpr_banner=1"
+  style={{ minWidth: '320px', height: '700px' }}
+></div>
       </main>
       <Footer />
     </div>
