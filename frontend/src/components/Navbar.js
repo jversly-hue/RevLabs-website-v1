@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-const CALENDLY_URL = "https://calendly.com/revlabs";
+const CALENDLY_URL = "https://calendly.com/jversly/30min";
 
 const Navbar = () => {
   const { language, toggleLanguage, t } = useLanguage();
