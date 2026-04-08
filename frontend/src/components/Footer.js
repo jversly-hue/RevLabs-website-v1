@@ -24,12 +24,12 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex items-center gap-8">
-            <a 
-              href={`mailto:${t('footer.email')}`}
-              className="text-[13px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors"
-            >
-              {t('footer.email')}
-            </a>
+           <a
+  href="mailto:info@revlabs.be"
+  className="text-[13px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors"
+>
+  info@revlabs.be
+</a>
             <span className="text-[13px] text-[#6B7280]">
               &copy; {currentYear} RevLabs
             </span>
