@@ -12,10 +12,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
-import axios from 'axios';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xvzvybjp";
 
 const ContactForm = () => {
   const { t } = useLanguage();
@@ -45,7 +43,27 @@ const ContactForm = () => {
     setSubmitStatus(null);
 
     try {
-      await axios.post(`${API}/contact`, formData);
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company_name: formData.company_name,
+          industry: formData.industry,
+          message: formData.message,
+          _subject: `Nieuwe RevLabs lead van ${formData.name}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
       setSubmitStatus('success');
       setFormData({
         name: '',
@@ -94,13 +112,18 @@ const ContactForm = () => {
           {submitStatus === 'success' && (
             <div className="mb-6 p-4 bg-[#1a2a1a] border border-[#2a3a2a] rounded-lg flex items-center gap-3" data-testid="form-success">
               <CheckCircle className="w-5 h-5 text-[#4ade80]" />
-              <span className="text-[14px] text-[#4ade80]">{t('contact.form.success')}</span>
+              <span className="text-[14px] text-[#4ade80]">
+                Bedankt! Uw bericht is succesvol verzonden.
+              </span>
             </div>
           )}
+
           {submitStatus === 'error' && (
             <div className="mb-6 p-4 bg-[#2a1a1a] border border-[#3a2a2a] rounded-lg flex items-center gap-3" data-testid="form-error">
               <AlertCircle className="w-5 h-5 text-[#f87171]" />
-              <span className="text-[14px] text-[#f87171]">{t('contact.form.error')}</span>
+              <span className="text-[14px] text-[#f87171]">
+                Er is iets misgelopen bij het verzenden. Probeer het opnieuw.
+              </span>
             </div>
           )}
 
@@ -222,7 +245,7 @@ const ContactForm = () => {
             {isSubmitting ? (
               <>
                 <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                {t('contact.form.submitting')}
+                Bericht verzenden...
               </>
             ) : (
               <>
