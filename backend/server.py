@@ -4,6 +4,8 @@ from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import logging
+import smtplib
+from email.message import EmailMessage
 from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Optional
@@ -12,12 +14,12 @@ from datetime import datetime, timezone
 
 
 ROOT_DIR = Path(__file__).parent
-load_dotenv(ROOT_DIR / '.env')
+load_dotenv(ROOT_DIR / ".env")
 
 # MongoDB connection
-mongo_url = os.environ['MONGO_URL']
+mongo_url = os.environ["MONGO_URL"]
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+db = client[os.environ["DB_NAME"]]
 
 # Create the main app without a prefix
 app = FastAPI()
@@ -29,13 +31,15 @@ api_router = APIRouter(prefix="/api")
 # Define Models
 class StatusCheck(BaseModel):
     model_config = ConfigDict(extra="ignore")
-    
+
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     client_name: str
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
+
 class StatusCheckCreate(BaseModel):
     client_name: str
+
 
 # Contact Form Models
 class ContactFormCreate(BaseModel):
@@ -46,9 +50,10 @@ class ContactFormCreate(BaseModel):
     industry: str = Field(..., description="Industry type: dakwerken, hvac, other")
     message: Optional[str] = Field(None, max_length=1000)
 
+
 class ContactForm(BaseModel):
     model_config = ConfigDict(extra="ignore")
-    
+
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     name: str
     email: str
@@ -58,10 +63,55 @@ class ContactForm(BaseModel):
     message: Optional[str] = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
+
 class ContactFormResponse(BaseModel):
     success: bool
     message: str
     id: Optional[str] = None
+
+
+def send_contact_email(contact: ContactForm) -> None:
+    smtp_user = os.environ.get("SMTP_USER")
+    smtp_password = os.environ.get("SMTP_PASSWORD")
+    contact_receiver = os.environ.get("CONTACT_RECEIVER", "jversly@gmail.com")
+
+    if not smtp_user or not smtp_password:
+        raise Exception("SMTP_USER or SMTP_PASSWORD is missing")
+
+    industry_labels = {
+        "dakwerken": "Dakwerken",
+        "hvac": "HVAC",
+        "other": "Andere",
+    }
+
+    industry_text = industry_labels.get(contact.industry, contact.industry)
+
+    msg = EmailMessage()
+    msg["Subject"] = f"Nieuwe RevLabs lead van {contact.name}"
+    msg["From"] = smtp_user
+    msg["To"] = contact_receiver
+    msg["Reply-To"] = contact.email
+
+    msg.set_content(
+        f"""Nieuwe contactaanvraag via de RevLabs website
+
+Naam: {contact.name}
+E-mail: {contact.email}
+Telefoon: {contact.phone}
+Bedrijfsnaam: {contact.company_name}
+Sector: {industry_text}
+
+Bericht:
+{contact.message or 'Geen bericht ingevuld'}
+
+Lead ID: {contact.id}
+Ontvangen op: {contact.created_at.isoformat()}
+"""
+    )
+
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        smtp.login(smtp_user, smtp_password)
+        smtp.send_message(msg)
 
 
 # Routes
@@ -69,55 +119,60 @@ class ContactFormResponse(BaseModel):
 async def root():
     return {"message": "RevLabs API - The future of business"}
 
+
 @api_router.post("/status", response_model=StatusCheck)
 async def create_status_check(input: StatusCheckCreate):
     status_dict = input.model_dump()
     status_obj = StatusCheck(**status_dict)
-    
+
     doc = status_obj.model_dump()
-    doc['timestamp'] = doc['timestamp'].isoformat()
-    
-    _ = await db.status_checks.insert_one(doc)
+    doc["timestamp"] = doc["timestamp"].isoformat()
+
+    await db.status_checks.insert_one(doc)
     return status_obj
+
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
     status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
-    
+
     for check in status_checks:
-        if isinstance(check['timestamp'], str):
-            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
-    
+        if isinstance(check["timestamp"], str):
+            check["timestamp"] = datetime.fromisoformat(check["timestamp"])
+
     return status_checks
+
 
 # Contact Form Routes
 @api_router.post("/contact", response_model=ContactFormResponse)
 async def submit_contact_form(form_data: ContactFormCreate):
     try:
         contact = ContactForm(**form_data.model_dump())
-        
+
         doc = contact.model_dump()
-        doc['created_at'] = doc['created_at'].isoformat()
-        
+        doc["created_at"] = doc["created_at"].isoformat()
+
         await db.contact_submissions.insert_one(doc)
-        
+        send_contact_email(contact)
+
         return ContactFormResponse(
             success=True,
             message="Contact form submitted successfully",
-            id=contact.id
+            id=contact.id,
         )
     except Exception as e:
-        logging.error(f"Error submitting contact form: {e}")
+        logger.error(f"Error submitting contact form: {e}")
         raise HTTPException(status_code=500, detail="Failed to submit contact form")
+
 
 @api_router.get("/contacts", response_model=List[ContactForm])
 async def get_contact_submissions():
     contacts = await db.contact_submissions.find({}, {"_id": 0}).to_list(1000)
-    
+
     for contact in contacts:
-        if isinstance(contact.get('created_at'), str):
-            contact['created_at'] = datetime.fromisoformat(contact['created_at'])
-    
+        if isinstance(contact.get("created_at"), str):
+            contact["created_at"] = datetime.fromisoformat(contact["created_at"])
+
     return contacts
 
 
@@ -127,7 +182,7 @@ app.include_router(api_router)
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=os.environ.get('CORS_ORIGINS', '*').split(','),
+    allow_origins=os.environ.get("CORS_ORIGINS", "*").split(","),
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -135,9 +190,10 @@ app.add_middleware(
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
+
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
