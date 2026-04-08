@@ -12,6 +12,7 @@ const Footer = () => {
     >
       <div className="max-w-[1140px] mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          
           {/* Logo & Tagline */}
           <div className="flex items-center gap-6">
             <a href="/" className="text-[20px] font-black italic text-[#E8E8EC] tracking-tight">
@@ -22,18 +23,13 @@ const Footer = () => {
             </span>
           </div>
 
-          {/* Links */}
-          <div className="flex items-center gap-8">
-           <a
-  href="mailto:info@revlabs.be"
-  className="text-[13px] text-[#9CA3AF] hover:text-[#E8E8EC] transition-colors"
->
-  info@revlabs.be
-</a>
+          {/* Copyright */}
+          <div className="flex items-center">
             <span className="text-[13px] text-[#6B7280]">
               &copy; {currentYear} RevLabs
             </span>
           </div>
+
         </div>
       </div>
     </footer>
